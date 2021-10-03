@@ -1,4 +1,6 @@
 finance
+capitalization
+discount-rate
 finance-1
 global-finance
 money
@@ -6,6 +8,7 @@ institutional-investors
 esg-2.0
 central-banks
 central-bank-independence
+sovereign-debt-held-by-central-banks
 financial-stability
 climate-risk
 bis-recommendations
@@ -13,6 +16,7 @@ index-providers
 hedge-funds
 the-wall-street-consensus
 imperialism-and-financialism
+financial-system
 money-1
 regulation
 institutionalizing-esg
@@ -22,9 +26,11 @@ central-bank-independence-1
 market-neutrality
 financial-stability-1
 climate-risk-1
+climate-change-impact-on-central-banks
 sustainable-regulation
 feds-dollar-empire
 eu-macroprudential
+finance-influence
 off-balance-sheet-financial-agencies-obfa
 public-debt
 public-debt-management
@@ -36,16 +42,27 @@ index-funds
 etf
 big-three
 the-age-of-asset-management-capitalism
+shareholder-democracy
+direct-indexing
 institutional-investors-1
 esg-2.0-1
+capital-markets
+china
 climate-finance
 institutional-dynamics
 assistance-to-developing-countries
 asset-managers-scoreboard
 accounting-standards
 double-materiality
+financial-crises
+diversification
 digital-currencies
 cbdc---central-bank-digital-currencies
+esg
+win-win
+externalities-risks
+climate-impact-management-system
+etf-universe
 fintech
 imperialism-and-financialism-1
 dollar-empire
@@ -55,3 +72,4 @@ about
 links
 news
 gfanz-low-carbon-banking
+biodiversity-and-financial-stability

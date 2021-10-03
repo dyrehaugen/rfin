@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,8 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -78,15 +77,12 @@
 \makeatother
 
 \renewcommand\chaptername{}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Finance}
 \author{Dyrehaugen Web Notebook}
-\date{2021-04-28}
+\date{2021-10-03}
 
 \begin{document}
 \maketitle
@@ -99,6 +95,50 @@
 \chapter{Finance}\label{finance}}
 
 \includegraphics{fig/zelda.jpg}
+
+Finance is not production, but it seems to be involved in every aspect of it.
+
+\hypertarget{capitalization}{%
+\chapter{Capitalization}\label{capitalization}}
+
+\hypertarget{discount-rate}{%
+\section{Discount Rate}\label{discount-rate}}
+
+\emph{Fix}
+
+Where did the discount rate come from? The answer: out of thin air. Like the capitalization ritual itself, the discount rate is whatever we define it to be. Capitalists employ the capitalization ritual by ritualistic choosing a discount rate that they deem `proper'.
+
+\includegraphics{fig/profit_cap.png}
+
+\emph{Figure: Profit and capitalization of US firms, 1950 -- 2017. Each point represents a US firm. Color indicates the year of observation. The black line shows how capitalization relates to profits for a discount rate of 6.8\% --- the average found in the data. There are about 200,000 observations in total.}
+
+Capitalization is proportional to profit discounted at a rate of 7\%.
+
+Is there something special about the discount rate of 7\%? The answer is yes and no. That rate is special in the sense that it's what US capitalists have deemed to be `proper'. But this rate is banal in the sense that it has no deeper meaning. US capitalists discount at 7\% because that is the norm they have accepted. Gesture the cross. Discount at 7\%. Regularity from ritual.
+
+\begin{quote}
+Until the emergence of capitalization in the fourteenth century, {[}the `proper' discount rate was{]} seen as a matter of state decree, sanctioned by religion and tradition, and modified by necessity. The nobility and clergy set the just lending rates as well as the tolerated zone of private divergence, and they often kept them fixed for very long periods of time.
+\end{quote}
+
+Today, the `proper' discount rate still has an element of decree. Governments (via central banks) set the benchmark interest rate, which in turn affects the benchmark discount rate on equity.
+
+Far more than just a `monetary phenomena', then, the inflation rate signals instability in the social order. That instability, it seems, translates into capitalists fears about the future. When the price system is more unstable, capitalists discount present income more steeply.
+
+\begin{quote}
+The `science of finance' is first and foremost a collective ethos. Its real achievement is not objective discovery but ethical articulation. Taken together, the models of finance constitute the architecture of the capitalist nomos. In a shifting world of nominal mirrors and pecuniary fiction, this nomos provides capitalists with a clear, moral anchor. It fixes the underlying terrain, it shows them the proper path to follow, and it compels them to stay on track. Without this anchor, all capitalists --- whether they are small, anonymous day traders, legendary investors such as Warren Buffet, or professional fund managers like Bill Gross --- would be utterly lost.
+\end{quote}
+
+\begin{quote}
+Finance theory establishes the elementary particles of capitalization and the boundaries of accumulation. It gives capitalists the basic building blocks of investment; it tells them how to quantify these entities as numerical `variables'; and it provides them with a universal algorithm that reduces these variables into the single magnitude of present value. Although individual capitalists differ in how they interpret and apply these principles, few if any can transcend their logic. And since they all end up obeying the same general rules, the rules themselves seem `objective' and therefore amenable to `scientific discovery'.
+\end{quote}
+
+The regularities of corporate finance are majestic in scope. But these regularities stem not from any laws of nature. They are regularities from ritual.
+
+Perhaps the most important question is where this ritual is headed. Does capitalization have a long-term future? Neoclassical economists like William Nordhaus think so. They're happy to apply the capitalization ritual to existential crises like climate change. And the net present value of their calculations tells them (surprise surprise) that we should do essentially nothing. But of course, by applying a heavy discount rate to future income, that is what they assumed in the first place. It's ritualized apathy.
+
+The ritual of capitalization is surrounded by a mystique of `higher truth'. Whenever you encounter such a mystique, it's a good bet that you're dealing with ideology. The point of the `mystique' is to stop you from looking under the ideology's hood.
+
+\href{https://economicsfromthetopdown.com/2021/06/02/the-ritual-of-capitalization/}{Fix (2021) Ritual of Capitalization}
 
 \hypertarget{finance-1}{%
 \chapter{Finance}\label{finance-1}}
@@ -359,7 +399,7 @@ that our financial authorities are pledged to never let happen.
 \href{pdf/Austin_2021_Pigou_\%20and_the_dropped_stitch_of_economics_RWER95.pdf}{Duncan Austin: Pigou and the dropped stitch of economics RWER95 (pdf)}
 
 \hypertarget{central-bank-independence}{%
-\subsubsection{Central Bank Independence}\label{central-bank-independence}}
+\subsection{Central Bank Independence}\label{central-bank-independence}}
 
 \textbf{Market Neutrality}
 
@@ -431,6 +471,13 @@ It wouldn't be surprising to find the exogenous transition shocks approach in th
 and other's recognition that central banks cannot longer hide behind the `market neutrality' argument.
 
 \href{https://twitter.com/DanielaGabor/status/1384837864412917765}{Gabor (Twitter)}
+
+\hypertarget{sovereign-debt-held-by-central-banks}{%
+\subsection{Sovereign Debt held by Central Banks}\label{sovereign-debt-held-by-central-banks}}
+
+\includegraphics{fig/sovereign_debt_held_by_central_banks.png}
+
+\href{https://transformative-responses.org/the-project/next-generation-central-banking-climate-change-inequality-financial-instability/}{Gabor (2021) Revolution without revolutionaries: Interrogating the return of monetary financing}
 
 \hypertarget{financial-stability}{%
 \subsection{Financial Stability}\label{financial-stability}}
@@ -1340,12 +1387,65 @@ elsewhere.
 \href{http://bnarchives.yorku.ca/329/}{Bichler \& Nitzan (2012) Imperialism and Financialism}
 \href{pdf/Bichler_Nitzan_2012_Imperialism_and_Financialism.pdf}{(pdf)}
 
+\hypertarget{financial-system}{%
+\chapter{Financial System}\label{financial-system}}
+
+\emph{Ryan-Collins}
+
+\textbf{Credit drives Housing Prices}
+
+One of the most remarkable, but
+neglected, macroeconomic shifts in the past 50 years has been the
+transformation of banking systems in advanced economies from their
+textbook role of lending to non-­financial firms for working capital
+and investment to becoming real estate lenders ( Jordà et al.~2017).
+Mortgage lending in advanced economies increased on average from
+40 percent of GDP in the mid-­1990s to almost 70 percent by the finan-
+cial crisis of 2007--­2008, whilst the stock of business loans rose by
+little more than 5 percent ( Jordà et al.~2017). During the same period,
+average real house prices followed a path similar to that taken by
+mortgage credit, doubling in value, suggesting credit was the primary
+driver of rising prices.
+
+\href{https://onlinelibrary.wi\%20ley.com/doi/10.1111/ajes.12387}{Ryan-Collins (2021) Private Landed Property and Finance: A Checkered History}
+\href{pdf/Ryan-Collins_2021_Private_Landed_Property_and_Finance.pdf}{(pdf)}
+
 \hypertarget{money-1}{%
 \chapter{Money}\label{money-1}}
 
 \begin{quote}
 Money is the alienated essence of man's labour and life; and this alien essence dominates him as he worships it. (Karl Marx)
 \end{quote}
+
+\hypertarget{regulation}{%
+\chapter{Regulation}\label{regulation}}
+
+\hypertarget{institutionalizing-esg}{%
+\section{Institutionalizing ESG}\label{institutionalizing-esg}}
+
+\emph{Beslik}
+
+Suddenly, millions of influential, wealthy and beyond imagination privileged people in the financial and corporate sectors around the world realised that ``Oh, this is no good anymore. We need to deploy `non-financial' metrics to understand the value of companies we invest in and run, from financial point-of-view.''
+
+Just like that? Well, maybe not. But I think one of the most relevant answers to how this has happened does not come from sudden and enormous pressure from clients (they usually don't even know what they are buying on ESG since they lack information) or from a prophetic moment in the morning-mirror for millions of people in the financial and corporate sector asking themselves how they can save the world.
+
+If you try to track down some of the key drivers you can see the traces going back to 2008 when people working in the financial sector and their decisions driven by the only God (money) shook the entire world -- and billions of people around the world paid a price, some with their life.
+
+Politicians reacted too late and too lame, and most of the losses were paid for collectively, i.e.~tax money. For too long, self-regulation and voluntary, business driven responsibility was championed as most efficient symbiosis for the benefit of all, or very few.
+
+After 2008, politicians might have learned the lesson that self-regulation and voluntary responsibility by the financial and corporate sectors means different things to different actors.
+
+In the climate negotiations in Copenhagen and in Paris (two among the hundreds of conferences on climate change and consequences related to that, that I have participated in over last 20 years) the financial industry was largely absent. It was not there, or just there to observe. Despite its size and influence, despite its power, the financial sector does not have any climate targets discussed and agreed upon on a global level -- neither from the COP negotiations, nor via any other transnational agreements.
+
+That's changing now. \emph{It's the regulation in the EU and by now partly in the US that is the key driver behind ESG growth}, both in terms of interest and in terms of assets.
+
+Yes, those grey politicians in the different parts of the world are by all means changing the word of investments by posing rules, sometimes in the need of improvement, yet rules that institutionalise ESG. Not as an add-on, as self-regulated nice-to-have things you can market to clients. But as a law.
+
+This, if anything, is monumental, and in the years to come regulation, nothing else, forced by reality, will completely reshape the social contract between the financial industry and societies at large.
+
+It is both needed and necessary if ESG is meant to make real changes on the ground.
+
+\href{https://esgonasunday.substack.com/p/week-19-esg-on-a-sunday-turns-1-}{Beslik}
 
 \hypertarget{central-banks-1}{%
 \chapter{Central Banks}\label{central-banks-1}}
@@ -1374,8 +1474,44 @@ that our financial authorities are pledged to never let happen.
 
 \href{pdf/Austin_2021_Pigou_\%20and_the_dropped_stitch_of_economics_RWER95.pdf}{Duncan Austin: Pigou and the dropped stitch of economics RWER95 (pdf)}
 
+\hypertarget{macroprudential}{%
+\section{Macroprudential}\label{macroprudential}}
+
+Macroprudential policies are financial policies aimed at ensuring the stability of the financial system as a whole to prevent substantial disruptions in credit and other vital financial services necessary for stable economic growth. The stability of the financial system is at greater risk when financial vulnerabilities are high, such as when institutions and investors have high leverage and are overly reliant on uninsured short-term funding, and interconnections are complex and opaque. High vulnerabilities increase the likelihood that a firm's failure or other negative shock would cause distress at other financial institutions because of direct exposures and through fire sales, contagion, or other negative externalities arising from the initial shock. Macroprudential policies aim to reduce the financial system's sensitivity to shocks by limiting the buildup of financial vulnerabilities.
+
+One example of a macroprudential policy is the higher capital charge applied to Global Systemically Important Banks (G-SIBs), banks that pose more risk to the system. The G-SIB capital surcharge is based on five types of characteristics viewed to increase a bank's systemic risk: size, complexity, interconnectedness, lack of substitutes, and cross-jurisdictional activity. Higher capital charges reduce the likelihood that a G-SIB would fail because they will have thicker capital cushions to absorb losses.
+
+A \href{https://www.brookings.edu/research/understanding-the-effects-of-the-u-s-stress-tests/}{recent paper} looks at how the macro scenarios and assumptions about dividends and share repurchases in the stress tests work to reduce procyclicality of capital requirements.
+
+Macroprudential tools can be structural or cyclical. Structural policies are implemented to build lender or borrower resilience to adverse events at any point in the business cycle. For example, the additional capital charges for G-SIBs are a structural tool. In other countries, limits on loan-to-value ratios (LTVs) or debt service--to--income ratios (DSTIs) for mortgage borrowers are examples of structural tools that have been applied to borrowers. These limits can be macroprudential when they are intended to not only protect an individual borrower from too much debt, but to protect home values in neighborhoods from falling sharply because many borrowers have trouble making their payments at the same time. The Hong Kong Monetary Authority, for example, sets the LTV ratios for borrowers based on the value of the property. Bank borrowers for properties with high values could get mortgages with LTV ratios ranging from 40 percent to 60 percent, while they could get mortgages with higher LTV ratios, up to 70 percent, for properties with low values.
+
+Cyclical policies are aimed at increasing resilience in anticipation of an economic downturn to lessen the reduction in the supply of credit once the downturn materializes. The countercyclical capital buffer (CCyB) is an example of a cyclical policy. The CCyB works by requiring banks to increase their capital cushions during an economic expansion when systemic risks are rising, and then release them in an economic downturn to absorb losses. Reducing the capital constraint by releasing the buffer when the economy slows helps to insure against deleveraging, which if not counteracted could deepen the downturn by restricting credit.
+
+Historically, macroprudential policies have been used more often in emerging market economies than in advanced economies. But since the global financial crisis, both advanced economies and emerging market economies have been using macroprudential measures more frequently.
+
+\href{https://www.brookings.edu/blog/up-front/2020/02/11/what-are-macroprudential-tools/}{Brookings}
+
 \hypertarget{central-bank-independence-1}{%
 \section{Central Bank Independence}\label{central-bank-independence-1}}
+
+\emph{Haldane Memo}
+
+The widespread adoption of central bank independence was born out of the economic situation of the 1970s. The Great Inflation had seen high and persistent inflation across the world and economists turned their attention to the role that monetary policy played in this phenomenon. The time-consistency theory of Kydland and Prescott (1977), Nordhaus (1975) and Barro and Gordon (1983) provided an elegant answer to what might be going on. Governments had a natural tendency to over-inflate their economies, especially around election time, generating an ``inflation bias''. To curb this inflation bias, some institutional means was needed to constrain government's policy hand. Rogoff (1985) developed a model which provided such an institutional fix. Monetary policy decisions were to be delegated to a ``conservative'', inflation-minded, central bank acting independently from government. In this way, central bank independence could prevent, at source, a return to the Great Inflation of the 1970s.
+
+The macro-economic benefits, in theory, did not end there. Provided inflation expectations were well-anchored and central banks were not too inflation-averse -- ``inflation nutters'' in the language of Mervyn King -- monetary policy could be effective in stabilising output in the economy too. In other words, central bank independence was a potential twin-win, reducing inflation biases at no cost in increased output variability -- a free lunch.
+
+Empirical evidence followed to test these hypotheses. During the 1980s and 1990s, a number of papers established a statistically significant link between the level and variability of inflation and the degree of central bank independence across a range of countries. These cross-country correlations strongly suggested central independence was an important contributor to reduced inflation bias (Chart 3) and that it wasn't associated with increased variability in output (Chart 4). The free lunch in theory was there in practice too. And this evidence, in turn, helped spur moves towards central bank independence in the latter-part of the 20th century.
+
+Interestingly, a look at more recent time periods suggests these observed associations have vanished since the start of the 21st century (Charts 5-7). What explains this disappearing correlation? Some have used it to question whether the earlier link between independence and low inflation was no more than a statistical mirage. It could be argued that the fall in inflation over this earlier period was instead the result of the benign macro-economic environment of the Great Moderation. In other words, better inflation outcomes in the late 20th century might have reflected good luck rather than good central bank management.
+
+The time-consistency problem familiar from monetary policy has a clear read-across to the world of financial stability. Governments have an incentive to run their financial systems, as well as their economies, hot in the interests of growth and electoral advantage. This generates a tendency to loosen regulation too far during credit booms, increasing the risk of future bouts of financial instability. In other words, there is a potential problem of ``instability bias'' in regulatory policies, to accompany the ``inflation bias'' in monetary policies.
+
+In fact, I would argue this time-consistency problem is potentially greater in the financial stability sphere than for monetary policy, for two reasons. Credit cycles tend to be longer in duration, and larger in amplitude, than typical business cycles. This means wishful thinking and policy myopia (``this time is different'') are more likely to arise in credit booms than during typical business cycle upswings, exaggerating the time-consistency problem of financial stability policies.
+The costs of financial instabilities and crises also tend to larger than the costs of inflationary surges. This means the temptation to act in a time-inconsistent fashion -- talking tough ex-ante, but acting weak ex-post -- also tends to be greater. That can encourage risk-taking and amplify financial cycles and crises -- a doom loop. The Global Financial Crisis, a long-duration credit boom that prompted massive government support ex-post, was a good example of these acute financial stability time-consistency problems in practice.
+
+Given the practical success of independence, it is important to guard it for the future. And there are potential threats here. Central banks around the world have expanded their balance sheets massively over the past decade, and particularly over the past year. While this is not monetary financing, it has blurred the line between the monetary and fiscal realms and, among some people, raised questions of independence. The test will come if and when inflation begins to rise and central banks need to tighten policy to meet their mandate, independently of the prevailing fiscal stance. At that point, the strength and effectiveness of the legal and institutional frameworks surrounding independence will be crucial in ensuring we continue to benefit from the twin-wins that have been a feature of the last few decades.
+
+\href{https://bankplassen.norges-bank.no/2021/04/16/central-bank-independence-a-practitioners-perspective/\#more-1994}{Haldane}
 
 \hypertarget{market-neutrality}{%
 \subsection{Market Neutrality}\label{market-neutrality}}
@@ -1562,6 +1698,491 @@ within the current institutional framework, these promotional efforts should be 
 political authorities, leaving delegated authorities with a supporting role.
 
 \href{pdf/Baer_2021_Institutional_Climate_Policy_Dynamics.pdf}{Baer (2021) Climate-related financial policies (pdf)}
+
+\hypertarget{climate-change-impact-on-central-banks}{%
+\subsubsection{Climate Change Impact on Central Banks}\label{climate-change-impact-on-central-banks}}
+
+\emph{Batten Abstract}
+
+This paper examines the channels via which climate change and policies to mitigate it could affect a
+central bank's ability to meet its monetary and financial stability objectives. We argue that two types of
+risks are particularly relevant for central banks. First, a weather-related natural disaster could trigger
+financial and macroeconomic instability if it severely damages the balance sheets of households,
+corporates, banks, and insurers (\emph{physical risks}). Second, a sudden, unexpected tightening of carbon
+emission policies could lead to a disorderly re-pricing of carbon-intensive assets and a negative supply
+shock (\emph{transition risks}). Climate-related disclosure could facilitate an orderly transition to a low-carbon
+economy if it helps a wide range of investors better assess their financial risk exposures.
+
+\emph{Batten Memo}
+
+Our analysis builds on Bank of England (2015) and
+Carney (2015) which have examined the impact of climate change on the insurance industry, but
+broadens the scope of the analysis. Specifically, our paper examines the impact of climate
+change and the changes in the composition of energy supply associated with the transition to a
+low-carbon economy on the financial system and the macroeconomy, and thus goes beyond the
+analysis of the European Systemic Risk Board (2016) that considered the potential impact of the
+transition to a low-carbon economy on financial stability. While climate change is expected to
+have more adverse macroeconomic impacts on some developing countries, the focus of this
+paper is mainly on the impact of climate change from the perspective of central banks in
+advanced economies.
+
+Without CCS, 35\% of known global oil, 52\% of gas and 88\% of coal reserves will
+be `unburnable' before 2050 in order to achieve the 2oC target.
+
+The carbon price (which could take a form of a carbon tax or determined via a carbon
+emission trading scheme) would need to be about €35-60/tCO 2 for CCS coal-fired power plants
+to compete against coal-fired plants with unabated emissions, and €90-105/tCO 2 for CCS-gas
+fired plants to compete against gas-fired plants with unabated emissions.
+
+Financial sector activities can influence physical risks through a number of channels. First, the
+decision of financial institutions to fund activities that are intensive in CO 2 emissions can
+contribute to increasing the climate-related physical risks, albeit indirectly; and conversely, their
+financing of technologies that help reduce CO 2 emissions can contribute to a reduction of
+climate-related physical risks. This is a problem of externalities, as the financial institutions that
+fund these activities do not necessarily suffer the losses and gains resulting from changes in
+climate-related physical risks, most of which may occur in the future, and hence may not
+internalise these losses and gains when making the funding decisions. The standard ways of
+addressing such externalities include appropriate use of taxes and subsidies, and legislation that
+directly targets the specific externalities.
+
+By contrast, prudential regulations are fairly blunt instruments for dealing with climate-related
+externalities. For example, capital requirements for banks and insurers are designed to mitigate
+prudential risks, and hence adapting these to reflect externalities could undermine their primary
+purpose, or could give rise to undesirable effects.
+On the one hand, relaxing regulations just to
+encourage particular types of lending, for example by reducing risk weights that are used in
+calculating the regulatory capital ratios below their prudentially sound levels, could jeopardise
+the safety and soundness of financial institutions. 12 On the other hand, tightening regulations on
+financial exposures to carbon-intensive firms could also have the unintended effect of increasing
+the cost of finance for those borrowers, thus reducing their ability to invest in emission-reducing
+technologies (e.g.~CCS and renewables), unless exclusions can be applied to financing
+specifically earmarked for such investments. Thus, targeted policy measures are more likely to
+be effective in achieving climate-related objectives than adapting prudential regulations.
+
+both the size of the financial losses arising from the occurrence of a given hazard and
+the allocation of those losses are influenced by the \emph{ex ante} decisions of the financial sector.
+For
+example, the amount of insurance and credit available for financing the construction of
+buildings in flood-prone areas will determine the size of the eventual financial losses arising
+from the materialisation of such risks, as well as the allocation of these losses. The market
+outcome can be expected to be efficient as long as all contracting parties are fully aware of the
+risks and can price them efficiently, but various market imperfections could result in mispricing
+of risks. For example, the price of insurance could be driven up if asymmetric information leads
+to adverse selection problems, in which only those parties that are inherently higher risk than
+average choose to buy insurance. 13 Moreover, uncertainty about the wider repercussions of
+extreme weather events implies that certain risks -- such as the likelihood that they trigger riots
+that could cause further damage -- are inherently hard to model.
+
+The materialisation of climate-related physical risks -- e.g.~via natural disasters that are
+influenced by climate change -- can potentially result in large financial losses, some of which are
+borne by insurers while others are uninsured.
+
+\emph{Batten Conclusion}
+
+This paper has examined the impact of climate change on the monetary policy and financial
+stability objectives of central banks. We have identified four main ways in which climate
+change and policies on carbon emissions could affect central banks' objectives.
+First, a weather-related natural disaster could trigger financial instability and a macroeconomic
+downturn if it causes severe damage to the balance sheets of households, corporates, banks and
+insurers (physical risks). The economic impact of a given natural disaster is likely to be less
+severe if the relevant risks are priced in financial contracts ex ante, and the financial system has
+distributed them efficiently, e.g.~via insurance and reinsurance. Ex post, a central bank will need
+to react appropriately to a disaster to meet its monetary and financial stability objectives by
+gauging the impact on the output gap, inflationary pressure and the financial system -- for
+example, by adjusting monetary policy and supplying liquidity to the financial system if needed.
+Second, gradual warming could also affect an economy's potential growth rate. However, more
+reliable quantitative estimates based on detailed sector-level impact analysis would be needed
+before central banks can incorporate this effect in their monetary policy analysis.
+Third, a sudden, unexpected tightening of carbon emission policies could lead to a disorderly re-
+pricing of carbon-intensive assets and generate a negative supply shock (transition risks). This
+has a potential for generating significant balance sheet losses and financial instability. An
+orderly transition to a low-carbon economy is possible, and is likely to be facilitated by
+transparent and predictable policies on carbon emissions that encourage an early re-direction of
+private investment towards low-carbon technologies. Climate-related disclosure by industries
+could encourage this re-direction if it enables a wide range of investors to better assess their
+financial risk exposures. Such disclosure is likely to be more effective if it is both forward-
+looking and simple to understand -- for example, how a given change in carbon price will affect
+the value of the firm. Such disclosure could potentially also help inform the central banks'
+assessment of financial stability risks arising from the transition to a low-carbon economy, for
+example via a stress test.
+Finally, both the changes in weather patterns and the increased reliance on bioenergy could
+increase the volatility of food and energy prices, and hence the volatility of headline inflation
+rates. This could make it more challenging for central banks to gauge underlying inflationary
+pressures and maintain inflation close to the target.
+
+\href{https://www.bankofengland.co.uk/working-paper/2016/lets-talk-about-the-weather-the-impact-of-climate-change-on-central-banks}{Batten (2016) Impact of climate change on central banks}
+
+\hypertarget{sustainable-regulation}{%
+\subsubsection{Sustainable Regulation}\label{sustainable-regulation}}
+
+WWF today launches a new framework -- Sustainable Financial Regulations and Central Bank Activities (SUSREG) -- to support central banks, financial regulators and supervisors in enhancing the financial sector's stability and resilience to climate-related and broader environmental and social risks, while enabling the mobilisation of capital for the transition to a low-carbon, resilient and sustainable economy.
+
+Developed as part of WWF's Greening Financial Regulation Initiative, the SUSREG framework will be used to assess the extent to which climate-related, environmental and social issues are being integrated in key aspects of financial regulations, supervisory expectations and monetary policy in 40 countries, covering most members and observers of the Basel Committee on Banking Supervision (BCBS).
+
+\href{https://wwf.panda.org/?1834441/Sustainable-Financial-Regulations-SUSREG}{WWF}
+
+\hypertarget{feds-dollar-empire}{%
+\section{FED's Dollar Empire}\label{feds-dollar-empire}}
+
+The return the Federal Reserve makes on its portfolio managing the dollar empire. In 2015, the Fed remitted \$97 billion in profits to the US Treasury; compare that to the \$88 billion made by the most profitable company in the world, Saudi Aramco.
+
+That money is treated like tax money---the Treasury reduces the federal debt by that amount.
+The Treasury reduces the federal debt by that amount, diminishing the quantity of safe assets in the world.
+
+\href{https://phenomenalworld.org/analysis/reconstruction-finance}{Johnson}
+
+\hypertarget{eu-macroprudential}{%
+\section{EU Macroprudential}\label{eu-macroprudential}}
+
+\emph{Stellinga Abstract}
+
+The 2007--09 financial crisis appeared to demonstrate the need for a strong, supranational EU macro‐prudential policy framework to prevent similar future disasters. The implemented framework, however, is neither. It is highly complex, involving many constraints on the use of macro‐prudential instruments. It is also one of the principal areas of national discretion in EU banking regulation. To explain this, I build on the `financial trilemma' thesis which holds that there are inherent tensions between pursuing financial stability, financial integration and national financial policies. Supranationalizing macro‐prudential policy proved difficult due to a lack of consensus on how to measure systemic risks and because of the distributional consequences involved. This increased the tension between stability and integration, as national macro‐prudential policies could constrain cross‐border finance and they could be misused for competitiveness considerations. Key policy actors disagreed on which goals to prioritize, with bargaining leading to a convoluted policy framework.
+
+\emph{Stellinga Memo}
+
+MPP targets systemic risks by enabling supervisors to tighten requirements during booms, to loosen them when risks recede, and to impose tougher rules on systemically important financial institutions.
+
+Given the devastating consequences of the crisis and EU policy‐makers' embrace of macro‐prudential ideas, a strong MPP framework seemed a likely post‐crisis outcome. Especially in light of the EU's push for regulatory harmonization -- both the single rulebook and the shift (in the Eurozone) towards supranational supervision by the European Central Bank (ECB) reduced national discretion in micro‐prudential regulation -- we would have expected a harmonized framework to emerge for macro‐prudential policy.
+
+The implemented framework did not meet these expectations.
+Although supervisors gained new macro‐prudential instruments, their use has been constrained by procedural requirements and limits to their stringency and scope, with macro‐prudential instruments focusing on capital requirements and leaving other segments of banking regulation and the non‐banking sector largely untouched.
+
+Systemic risk is an elusive concept with an important national dimension, rendering a one‐size‐fits‐all approach counterproductive.
+
+The MPP framework that developed between 2009 and 13 was the result of key actors' inability to agree on how to balance national discretion, stability and integration.
+
+With no consensus on how to measure systemic risks, supranational macro‐prudential norms implied a one‐size‐fits‐none approach. As systemic risks change over time, relying on a fixed set of indicators could well mean preparing for yesterday's war.
+
+\href{https://onlinelibrary.wiley.com/doi/full/10.1111/jcms.13195}{Stellinga}
+
+\hypertarget{finance-influence}{%
+\section{Finance Influence}\label{finance-influence}}
+
+\emph{Braun Abstract}
+
+The pre-crisis rise and post-crisis resilience of European repo and securitization markets represent political victories for the interests of large banks. To explain when and how finance wins, the literature emphasizes lobbying capacity (instrumental power) and the financial sector's central position in the economy (structural power). Increasingly, however, finance also enjoys infrastructural power, which stems from entanglements between specific financial markets and public-sector actors, such as treasuries and central banks, which govern by transacting in those markets. To demonstrate the analytical value of this perspective, the article traces how the European Central Bank (ECB), motivated by monetary policy considerations, has shaped post-crisis financial policymaking in the EU. It shows that the ECB has played a key part in fending off a financial transaction tax on repos and in shoring up and rebuilding the securitization market. With market-based forms of state agency on the rise, infrastructural entanglement and power shed new light on the politics of finance.
+
+\emph{Braun Memo}
+
+Following the global financial crisis, the European Commission proposed taxing repos and
+reining in securitization, in an effort to tackle the two financial markets at the heart of
+European shadow banking. Several years and policy battles later, repos are exempt from a
+defanged financial transaction tax proposal, while reviving securitization is a top EU policy
+priority. Why did financial-sector interests prevail? Proposing a new theoretical approach to
+the politics of finance, this article focuses on the power relations at the hybrid intersection of
+private banking and public central banking.
+
+Much has been written about the politics leading up to and protecting central bank
+independence, which both stems from and entrenches
+unequal power between capital and labour in a low-salience, technocratic policy area. In
+contrast, the literature has less to say about how, once central bank independence is
+established, power operates at the intersection of public monetary authority and private financial
+markets.
+
+The marketization of financial intermediation is a key aspect of financialization.
+The rise of what has variously been labelled `shadow banking', `securitized banking'
+or `market-based banking' has been a boon to the financial sector.
+Fee-based income, regulatory arbitrage, bigger balance sheets and higher leverage ratios
+have boosted profits and remuneration.
+Despite being seen as the chief culprit of the global financial crisis, market-
+based banking has shown remarkable resilience since 2008.
+In Europe, following a brief period of stigmatization, it is at the heart of
+`Capital Markets Union', the European Commission's attempt to build a more market-based
+financial system.
+This surprising outcome indicates substantial political support for financial-sector interests.
+
+The political economy literature emphasizes two forms of political power wielded by the
+financial sector: instrumental power, exercised through lobbying, and structural power,
+which derives from the financial sector's privileged position in financialized economies.
+
+This literature has
+yielded important results, but its treatment of the state and of finance as two separate
+spheres, and of state agency as purely regulatory, is problematic. It is at odds with the crucial
+insight of a discipline-spanning body of research that maintains that, at the centre of the
+financial system, state and market actors form a hybrid public--private partnership, or a
+franchise system.
+
+Whereas the regulatory view conceptualizes state--finance interactions
+as `regulation and governance through rule making and rule enforcement', this article,
+drawing on the hybridity view, maintains that state agency is often
+market-based---state actors appear not just as regulators of but also as participants in financial
+markets.
+
+This article advances a simple theoretical argument: when state actors transact in finan-
+cial markets for governance purposes they create infrastructural entanglements, which con-
+stitute a distinct source of financial-sector power. In the case at hand, repo and
+securitization markets---the two main pillars of market-based banking---provide the infra-
+structure through which the European Central Bank (ECB) implements its monetary policy.
+This entanglement makes central bankers, who seek to maximize their economic steering
+capacity, dependent on bankers, giving the latter infrastructural power. This has
+distributional consequences: financial institutions benefit from their infrastructural role in the
+monetary system, including through interest payments on central bank reserves---which
+come at a fiscal cost to taxpayers --- and through preferential treatment in the political process.
+
+The political power that accrues to private financial actors as a result of
+state actors seeking to govern through financial markets.
+
+Explaining the ECB's support for repo and securitization markets by the central
+bank's dependence on these financial infrastructures, the article adds an important piece to
+the puzzle of how finance wins, while at the same time highlighting policymaking as a facet
+of central banking that, at a time of heightened concerns about central bank independence
+and legitimacy.
+
+The political economy literature has shed light on the delegation of power to cen-
+tral bank technocrats, but has failed to elucidate the politics of how, once empowered,
+central bankers act on the economy.
+
+This became particularly problematic when, in the context
+of financial liberalization in the 1980s, central bank agency became more market-based.
+Specifically, central banks shifted from `direct' to `indirect' monetary policy instruments---
+the triad of reserve requirements, standing facilities and open market operations.
+As part of the latter, central banks, including the ECB, adopted financial
+practices from the private sector, notably mark-to-market techniques, margin calls and hair-
+cuts.
+The ECB took the marketization of monetary policy to new
+heights when, in 2005, it outsourced the decision over the collateral eligibility of euro-area
+sovereign bonds to private credit rating agencies.
+
+ECB is different from other EU gov-
+ernance bodies. It is not only a central bank that holds and exerts administrative authority---
+`setting, interpreting and applying statutory rules'---but also a central bank that trades in
+financial claims with other, private-sector banks.
+
+The central bank's control over macroeconomic conditions depends on financial transactions
+into which private actors enter at their own discretion, creating infrastructural entanglements with
+those financial markets that serve as the conduits for monetary policy.
+
+Traditionally, European banks have
+engaged in relationship-based lending financed by customer deposits. While banks continue
+to play a central role in European credit intermediation, the hallmark of the new business
+model has been the marketization of both sides of banks' balance sheets.
+On the asset side, banks securitize loans into asset-backed securities that are sold
+to investors. On the liability side, banks complement deposit financing by borrowing in the
+secured money market, where securities (including securitized loans) serve as collateral. This
+business model of market-based banking is part of the broader shadow banking system that
+includes non-bank financial institutions, such as money market mutual funds and asset managers.
+
+From a political economy perspective, market-based banking, and shadow banking more
+broadly, matter for three main reasons: systemic risk, corporate finance and inequality.
+The 2008 systemic financial crisis was caused by losses on securitized loans on the asset side and
+a freeze of short-term money market funding on the liability side of banks' balance sheets
+The buffer function associated
+with relationship-based banking is diminished with market-based banking,
+under which borrowing conditions for firms and households depend much more
+directly on developments in global capital markets.
+The marketization of financial intermediation has been a key contributor to
+the growth in inequality in OECD countries.
+
+The financial sector's high levels of unity and organization often
+bring favourable political outcomes.
+
+The dependence of the state on private and the resulting structural power of
+business in general, and of finance in particular.
+The distinguishing feature of structural power is that it achieves political
+forbearance without the need for business to organise and act in concert.
+
+The central bank and the treasury---routinely enter transactions with
+private-sector counterparties, buying and selling financial
+claims for public policy purposes. This leads to the main theoretical argument of the present
+article: those parts of the financial system that serve as conduits for such market-based
+economic governance enjoy infrastructural power. Closely related to structural power in that it
+rests on the financial sector's centrality for economic performance, infrastructural power
+nevertheless constitutes a distinct sub-type derived from direct entanglement at the level of
+policy instruments rather than the indirect dependence at the level of ultimate policy goals.
+
+According to the structural power approach policymakers placate business interests
+for fear that not doing so would harm economic growth.
+In contrast, infrastructural power operates via policymakers' expectation that harming
+particular markets would blunt their own policy instruments and thus
+diminish their control over the economy.
+
+The European Commission and the ECB may be working towards complementary and
+compatible goals, but they do so by different methods: the Commission governs by issuing
+directives and regulations, the ECB by issuing liabilities and purchasing securities.
+
+The ECB's support for repo and securitization markets is underpinned by
+a rational expectations-based macroeconomic paradigm
+that implies a positive net effect of deep and liquid financial markets on economic
+performance and governability.
+
+Central bankers protect finance in order to bolster their own
+institutional position and independence.
+
+\emph{Repo}
+
+While there was still considerable instrument diversity in the 1990s, by 1997 most EMU
+central banks had converged on reverse repurchase transactions as their primary reserve-
+providing instrument, thus paving the way for them to become the
+standard instrument for all open market operations of the Eurosystem (that is, the ECB and
+the national central banks). A sale and repurchase agreement, or repo, consists of an
+exchange of cash for securities between two parties. The cash borrower (`repo seller') agrees
+to repurchase the securities from the cash lender (`repo buyer') at a specified date in the
+future. Interest is paid by the cash borrower in the form of a mark-up on the repurchase
+price, the repo rate. Repo markets are at the heart of the global shadow banking system. In
+addition to the interbank segment, repo markets also connect banks in search of short-term
+funding and non-bank institutions seeking safe and liquid, money-like assets.
+Following the crisis, repo markets came under scrutiny for their effects on
+pro-cyclicality and leverage in the banking system, as well as on the bank--sovereign nexus.
+There are currently \$12 trillion of repo and reverse
+repo transactions outstanding globally, of which about \$9 trillion are collateralized by
+government bonds. At \$2.8 trillion, the euro-area repo market is the world's largest.
+
+In the late
+1990s, several high-level repo market studies identified the transnational integration of the
+European collateralized interbank market as a crucial prerequisite for the single monetary
+policy. Most importantly, the Giovannini Group, which reported to the European
+Commission, bemoaned the fact that Europe still had `essentially 15 separate repo markets'
+and argued that a `truly unified repo market' would facilitate central bank control over
+interbank rates.
+A study commissioned by DG Economic and
+Financial Affairs also emphasized that it would be `in the interest of the central bank to have
+an efficient repo market', which would enable `interest rate changes {[}to{]} feed through to the
+real economy more quickly and more evenly'.
+
+\emph{FTT}
+
+Starting in 2010, the Commission, then supported by the largest Member States, advo-
+cated taxing repos on the grounds that the market contributed to excessive and pro-cyclical
+leverage and thus to financial instability. The ECB, in contrast, opposed the financial trans-
+action tax on the grounds that a tax on repos would harm the market that served as the con-
+duit for the implementation and transmission of its open market operations. The rift
+between the two agencies was thus not based on a fundamental divergence on policy goals,
+but on the dependence of the ECB's market-based policy instruments on a deep and liquid
+repo market.
+
+\emph{Securitization}
+
+Prior to the US subprime crisis, central bankers and regulators
+praised securitization as a tool for risk diversification. In contrast, after the crisis securi-
+tization was seen as riddled with asymmetric information and moral hazard problems, and
+was linked to excessive lending, fraudulent mis-selling and financial instability.
+Regardless of the normative assessment, securitization
+reorganizes risks and incentives in ways that represent `a fundamental shift in how finance is
+done'.
+
+The infrastructural entanglement between the ECB and the securitization market is
+rooted in the ECB's decision to integrate ABSs into its collateral-eligibility framework.
+More recently, in the wake of the failure of Lehman Brothers, the ECB
+assumed the role of `dealer of last resort' for ABSs. By taking suddenly-
+illiquid ABSs onto its balance sheet, the ECB gained leverage over the securitization market,
+while at the same time becoming more dependent on it. This infrastructural entanglement
+led the ECB to support securitization at a time when this asset class was still shunned by
+investors and politicians alike, thus paving the way for its subsequent resuscitation.
+
+Collateral, quantitative and regulatory easing---no other public agency has done more
+for the European securitization market than the ECB. To see why instrumental power
+cannot explain this steadfast support, timing is, again, crucial. The ECB cast securitization as
+part of the solution at a time when other European and national policymakers still regarded
+it as part of the problem.
+
+The divergence between the ECB and the
+Commission is difficult to square with the structural power approach, which lacks a theoret-
+ical rationale for why different parts of the EU governance apparatus should hold such
+different views of the effects of a more tightly regulated securitization market on the shared
+policy goals of financial stability and economic growth. In contrast, the market-based nature
+of central bank agency, and the resulting infrastructural entanglement at the level of policy
+instruments, explain why the interests of the ECB were uniquely aligned with those of the
+securitization sector.
+
+The theoretical argument transcends
+the case of the ECB: In areas such as monetary policy, debt management or public banking,
+policy instruments are market-based, and governmental actors seeking to `govern through
+financial markets' have a vested interest in shoring up and stabilising the relevant market/
+governance infrastructures.
+
+\emph{Conclusion}
+
+One of the central questions for political economists in recent years has been why and how
+finance tends to win. The post-crisis resilience of market-based banking in the euro area repre-
+sents a significant victory for the financial sector because repo and securitization markets
+boost profits via higher leverage and income from fees. To explain that victory, this article
+adapted the concept of infrastructural power for studying the politics of finance. It showed
+that, in the two cases under consideration, the political power of repo and securitization mar-
+ket actors derives from their infrastructural entanglement with the ECB. Infrastructural power
+constitutes a sub-type of structural power that focuses on differences in governance methods,
+namely between administrative governance and market-based governance. Whereas structural
+power operates via policymakers' expectation that harming business will harm economic per-
+formance, infrastructural power operates via policymakers' expectation that curtailing mar-
+kets will curtail the effectiveness of their own, market-based policy instruments.
+
+ECB as a de facto financial policymaker; a role that is not, except in supervisory
+matters, part of its legal mandate.
+The ECB has helped establish, expand, pro-
+tect and revive repo and securitization markets, which serve as infrastructure for the imple-
+mentation and transmission of monetary policy.
+The preference for deep and liquid financial markets, shared by bankers
+(guided by profits) and central bankers (guided by monetary governability), prevailed.
+
+The notion of harnessing capital markets for public policy goals has also been at the heart of
+Capital Markets Union, which deploys a broad set of measures to engineer a more-market-
+based financial system. Deprived of fiscal and other macroeconomic policy instruments, the
+European Commission, supported by the ECB and by public development banks, sees
+Capital Markets Union as a means to harness private financial markets in order to achieve
+macroeconomic goals.
+
+The infrastructural power approach predicts that, under conditions of infrastructural
+entanglement, the interests of state actors in search of market-based economic steering
+capacity will tend to align with the interests of financial-sector counterparties, thus boosting
+the latter's political power.
+
+This article calls for caution. Other things being equal, greater reli-
+ance on market-based forms of state agency tends to strengthen the infrastructural power of
+finance. Working `through financial markets' may limit the ability of public authorities `to
+help Main Street, not Wall Street'.
+
+\href{https://academic.oup.com/ser/article/18/2/395/4883362}{Braun (2021) Central banking and the infrastructural power of finance}
+\href{pdf/Braun_2021_Central_Banking_and_Infrastructural_Power_of_Finance.pdf}{(pdf)}
+
+\hypertarget{off-balance-sheet-financial-agencies-obfa}{%
+\chapter{Off Balance Sheet Financial Agencies (OBFA)}\label{off-balance-sheet-financial-agencies-obfa}}
+
+\emph{Gutur-Sandu Abstract}
+
+ABSTRACT
+
+The original Maastricht regime designed the Eurozone's fiscal segment in a way that sought to keep member states' treasury budgets balanced by disciplining them through market forces, reducing the overall volume of public indebtedness, prohibiting monetary financing, and avoiding that Eurozone treasuries bail each other out. In this article, we analyse how these `neoliberal' rules for fiscal governance have been gradually superseded by an alternative approach that we call `governing through off-balance-sheet fiscal agencies' (OBFAs). OBFAs are special purpose vehicles that complement treasuries in supporting public investment, offering solvency insurance for banks, providing capital insurance of last resort for other treasuries, and expanding the stock of safe assets. By sponsoring OBFAs, treasuries can substitute `actual' liabilities on their balance sheets, which are potentially in conflict with the EU's neoliberal fiscal rules, with `contingent' liabilities -- guarantees that do not appear on-balance-sheet. Together, national and supra-national treasuries and OBFAs form a `fiscal ecosystem' in which neoliberal fiscal rules get re-emphasised but in practice are increasingly mitigated. This new mode of Eurozone fiscal governance is reflected not only in multiple policies implemented since 2010 -- the Recovery and Resilience Facility for example -- but also represents the main strategy in many Eurozone reform proposals.
+
+\href{https://www.tandfonline.com/doi/full/10.1080/13563467.2021.1910648}{Gutur-Sandu (2021) Eurozone's Evolving Fiscal Ecosystem}
+\href{pdf/Gutur-Sandu_2021_Eurozones_evolving_Fiscal_Ecosystem.pdf}{(pdf)}
+
+\hypertarget{public-debt}{%
+\chapter{Public Debt}\label{public-debt}}
+
+\hypertarget{public-debt-management}{%
+\section{Public Debt Management}\label{public-debt-management}}
+
+\emph{Romerskirchen}
+
+Already before the outset of the global pandemic, public debt loomed at historically high levels in all but a few advanced economies. The pandemic-related surge in government financing needs has resulted in OECD governments issuing a record amount of debt. Questions around the sustainability of this growing debt burden have taken centre stage in accounts of public finance. What is largely absent in these debates is the question of how governments actually borrow. The budgetary constraints of debt are not merely a function of debt levels, but are influenced by the ways in which public debt is planned, issued and managed. In the UK, 2019/20 debt interest payments, while benefiting from low interest rates, amounted to £48 billion -- more than defence spending. In spite of its economic and political importance, public debt management has received scant attention and continues to be clouded with technocratic obscurity. The arcane nature of public debt management has allowed consequential reforms in debt management agencies to largely fly under public and academic radars. This ESRC-funded study seeks to give a comprehensive account of this overlooked revolution.
+
+Starting in the 1980s, debt management functions in rich economies have been handed over to newly created debt management offices, which now enjoy far-reaching policy independence in managing sovereign debt. Who are these agencies which manage over 50 trillion US-Dollars across OECD countries? How can we explain the transformation of public debt management, both regarding institutional arrangements and new managerial practices? And what are the consequences and challenges of this silent revolution?
+
+This project on the operational arm of debt management seeks to throw light into an overlooked corner of public finances. ToPDeM will theorise and analyse the diffusion of new practices in sovereign debt management. In so doing, this research will combine evidence from statistical analyses of 24 advanced economies with an in-depth comparative case study of 3 countries demonstrating variation in institutional outcome (the UK, Germany, and Denmark).
+
+\href{https://www.public-debt.sps.ed.ac.uk/}{Romerskirchen}
+
+\hypertarget{sovereign-debt-after-covid}{%
+\section{Sovereign Debt after Covid}\label{sovereign-debt-after-covid}}
+
+\emph{G30 Report}
+
+\textbf{Sovereign Debt and Financing for Recovery after the COVID-19 Shock: Next Steps to Build a Better Architecture}
+
+This report acknowledges the world -- and lower-income countries -- have so far avoided large pandemic-driven debt defaults in part due to positive spillovers from extraordinary monetary and fiscal support in mature markets. However, the authors caution against complacency, warning that as the overall economic outlook brightens, the likelihood of tightening policy may result in outflows as well as further debt distress and ill effects in emerging and frontier market economies. Moreover, continued worries over the course of the pandemic, predominately vaccination rates and global access, must discourage early complacency or congratulatory posturing.
+
+The report makes clear that collective aversion to crisis planning - ostensibly for fear of triggering a self-fulfilling prophesy of debt defaults - is irresponsible when much of the world is one unforeseen shock away from a lost decade. The report underscores that now is the time to rebuild and reform the architecture to improve its long-term resilience and effectiveness. The G30 report makes a series of important recommendations designed to buttress the sovereign debt restructuring process and mechanisms in the following areas: There should be a recycling of SDRs, creditors should reaffirm and elaborate the comparability of treatment principle, the G-20 should establish a standing consultative mechanism in conjunction with the Common Framework, national law in major financial markets should shield payment systems and intermediaries from disruptive debt collection, the G-20 should publicly disavow the use of contract terms that impair debtors or creditors participation in international debt negotiations, and commercial, official, and multilateral lenders should encourage sovereign borrowers to adopt robust domestic debt disclosure requirements as part of their debt authorization.
+
+Slow progress on reforming debt architecture leaves the world unprepared to deal with persistent global public health and macroeconomic vulnerabilities in the coming years.
+
+The ravages of the pandemic are now at the highest point in several important emerging markets, while higher inflation is resulting in policy tightening, endangering the economic recovery.
+
+The possibility of debt servicing difficulties is substantial in the near term.
+
+The mechanisms put in place so far are likely inadequate to the challenges ahead.
+
+Continued failure to take the necessary steps to prepare for future shocks increases the risk that debt problems would not be resolved in an orderly way.
+
+\href{https://group30.org/publications/detail/4915}{G30}
 
 \hypertarget{index-providers-1}{%
 \chapter{Index Providers}\label{index-providers-1}}
@@ -1899,6 +2520,10 @@ to abide, to respect their rules'.
 \hypertarget{hedge-funds-1}{%
 \chapter{Hedge Funds}\label{hedge-funds-1}}
 
+\begin{quote}
+Decarbonization needs rules to penalise shadow banks' carbon lending
+\end{quote}
+
 In the midst of a global crisis, the hedge fund has prospered. The top fifteen hedge-fund managers earned an estimated \$23.2 billion last year, according to Bloomberg. Chase Coleman, the forty-five-year-old founder of Tiger Global Management, led the way, hauling in more than three billion for himself. The Financial Times took a more democratic view of the phenomenon, noting that the top twenty ``best-performing hedge fund managers of all time'' had provided more than sixty-three billion dollars for their investors during the coronavirus-driven market turmoil, ``making it the industry's best year of gains in a decade.''
 
 Given the supremacy of hedge funds, it was both satisfying and terrifying to observe the recent boom and bust in the value of GameStop, a run driven by small-time speculators. Several hedge funds lost extraordinary amounts of cash---as in billions and billions of dollars---on financial derivatives.
@@ -1906,6 +2531,266 @@ Given the supremacy of hedge funds, it was both satisfying and terrifying to obs
 Those who work at hedge funds are diligent about keeping who they are and what they do obscured behind a wall. Secrecy is intrinsic to the job description---for a hedge is a wall.
 
 \href{https://www.newyorker.com/culture/culture-desk/a-brief-history-of-the-hedge-fund}{Kaufman in New Yorker: History of Hedge}
+
+\hypertarget{hedge-central-banks}{%
+\section{Hedge Central Banks}\label{hedge-central-banks}}
+
+\emph{Braun (twitter)}
+
+Let's create a Chinese wall between sovereign bond issuers and the central bank.
+Wait who's up there taking bonds from the issuers and throwing them at the central bank at a profit whose social value is 0? Oh no they're hedge funds.
+
+\emph{WSJ 210510}
+
+Hedge Funds Face Backlash From Europe in Bond Market
+Spain, France and Italy have moved to curb orders from hedge funds
+to avoid demand for new bonds from appearing inflated.
+
+European governments are acting to limit hedge funds' participation in the market for new sovereign-bond issuance, following a surge in demand from the firms.
+
+The pushback was prompted by unusually large orders placed by hedge funds for new bonds, which can then potentially be sold---sometimes within hours---to the European Central Bank for a profit, bankers, investors and a government official said. Order books, which track demand for new bonds and help determine the prices, have ballooned since hedge funds began to pile into this trade.
+
+The debt-management offices of Spain and Italy have placed caps ranging from €500 million to €1 billion, equivalent to \$608 million to \$1.2 billion, on orders from hedge funds for bonds directly issued by countries in the primary market, according to bankers who worked on the deals. France has also limited order sizes, an official said.
+
+Millennium Management, Brevan Howard, DoubleLine, Tenaron Capital Management and BlueBay Asset Management are among the hedge funds that have been active in the primary market for sovereign bonds in recent months, according to bankers. Some hedge funds have put in orders for as much as €3 billion of bonds in a single offering, which is far more than they can realistically buy, the bankers said.
+
+Large investment firms, pension funds, insurers and banks' treasury departments are usually the biggest buyers of government bonds in the primary market. Countries issuing bonds typically seek to avoid investors with a short-term horizon. That is because hot money flowing quickly in and out of their debt can make prices volatile and potentially drive away other buyers, which could increase their borrowing costs.
+
+Hedge funds became bigger players in Europe's sovereign-bond market after the ECB last year put forward a program to buy as much as €1.85 trillion of debt to backstop credit markets and have stepped up their activity in 2021. The central bank only purchases government bonds in the secondary market, creating an opportunity for investors to buy bonds directly from the governments and sell them to the ECB.
+
+In October, the first issuance of European common debt attracted an unprecedented €233 billion in orders, according to the European Commission. That was the most ever in records dating back to 2003. Around 80\% of the bids were from hedge funds, according to a banker who worked on the deal. The commission, which is the executive arm of the European Union, ultimately raised €17 billion.
+
+Hedge funds have sought to turn profits from central-bank stimulus programs previously. The Federal Reserve's Troubled Asset Relief Program during the 2008-09 financial crisis drove distressed-debt investors to snap up assets such as mortgage-backed securities and U.S. bank debt cheaply and sell them to the Fed. The corporate-bond market in Europe is another area where this trade happens, as the ECB also buys investment-grade corporate debt to support the market.
+
+\href{https://www.wsj.com/articles/hedge-funds-face-backlash-from-europe-in-bond-market-11620639114}{WSJ}
+
+\hypertarget{index-funds}{%
+\chapter{Index Funds}\label{index-funds}}
+
+Financial markets need indices. There are over three million of
+them, according to the Index Industry Association.
+
+\href{https://planet-tracker.org/tracker-programmes/cross-programme-papers/\#indexing-prepare-for-sustainability-driven-disruption}{Planet Tracker (2021) Sustainability-Driven Disruption}
+\href{pdf/Planettracker_2021_Indexing.pdf}{(pdf)}
+
+\hypertarget{etf}{%
+\section{ETF}\label{etf}}
+
+\emph{Fitchner (Tweet)}
+
+Global passive assets hit \$15tn as ETF boom heats up
+
+The relentless growth of index funds in on picture!
+This growth is concentrating power in the hands of
+giant asset managers such as BlackRock, Vanguard
+but also in index providers like MSCI.
+
+\includegraphics{fig/ft_index_funds_2007-2020.png}
+
+\emph{Figure: FT}
+
+\begin{verbatim}
+Please use the sharing tools found via the share button at the top or side of articles. Copying articles to share with others is a breach of FT.com T&Cs and Copyright Policy. Email licensing@ft.com to buy additional rights. Subscribers may share up to 10 or 20 articles per month using the gift article service. More information can be found at https://www.ft.com/tour.
+https://www.ft.com/content/7d5c2468-619c-4c4b-b3e7-b0da015e939d
+
+Assets under management in exchange traded funds are eclipsing traditional index-tracking mutual funds for the first time, after the global passive investment industry vaulted past $15tn in assets last year.
+\end{verbatim}
+
+ETFs stood at \$7.71tn under management at the end of last year --- narrowly behind index mutual funds at \$7.76tn --- according to data compiled for the FT by the Investment Company Institute.
+
+Since then, ETFs are likely to have nosed ahead thanks to powerful inflows this year. Comprehensive global data comes with a lag, but consultancy ETFGI calculates that assets under management in ETFs stood at \$8.33tn at the end of March.
+
+The ascent of ETFs past their older cousins reflects the speed at which they have reshaped the investment industry.
+
+``People are increasingly building entire investment strategies using only ETFs. The choices you have vastly outstrip what you have in traditional index funds,'' said Todd Rosenbluth, head of ETF and mutual fund research at CFRA.
+
+Traditional passive mutual funds accept investor money or redemptions at the end of each day, whereas ETFs, first invented two decades later in the 1990s, trade like stocks on an exchange, letting investors hop in and out whenever they want.
+
+The pandemic-triggered market upheaval of March 2020 failed to dent their growth, with bond ETFs now also quickly gaining ground among investors who were pleasantly surprised by their resilience in the turmoil.
+
+Not everyone in the industry has been thrilled by the dramatic rise of ETFs. Some critics worry they lead investors to overtrade, which harms returns and exacerbates the volatility of markets.
+
+Jack Bogle, the founder of Vanguard, introduced the first index mutual fund for ordinary savers, but was infamously hostile to ETFs and disliked when his old company entered the industry after he retired. However, he conceded before he died in 2019 that ETFs had changed ``not only the nature of indexing, but also the entire field of investing''.
+
+Others argue that the flexibility of ETFs means securities that would normally be unavailable to ordinary investors --- such as complex derivatives --- can be easily packaged and sold to everyone without any restrictions.
+
+\href{https://www.ft.com/content/7d5c2468-619c-4c4b-b3e7-b0da015e939d}{FT}
+
+\hypertarget{big-three}{%
+\section{Big Three}\label{big-three}}
+
+\emph{Fitchner Abstract}
+
+Since 2008, a massive shift has occurred from active toward passive investment strategies. The passive index fund industry is dominated by BlackRock, Vanguard, and State Street, which we call the ``Big Three.'' We comprehensively map the ownership of the Big Three in the United States and find that together they constitute the largest shareholder in 88 percent of the S\&P 500 firms. In contrast to active funds, the Big Three hold relatively illiquid and permanent ownership positions. This has led to opposing views on incentives and possibilities to actively exert shareholder power. Some argue passive investors have little shareholder power because they cannot ``exit,'' while others point out this gives them stronger incentives to actively influence corporations. Through an analysis of proxy vote records we find that the Big Three do utilize coordinated voting strategies and hence follow a centralized corporate governance strategy. However, they generally vote with management, except at director (re-)elections. Moreover, the Big Three may exert ``hidden power'' through two channels: First, via private engagements with management of invested companies; and second, because company executives could be prone to internalizing the objectives of the Big Three. We discuss how this development entails new forms of financial risk.
+
+\hypertarget{the-age-of-asset-management-capitalism}{%
+\subsection{The age of asset management capitalism}\label{the-age-of-asset-management-capitalism}}
+
+\emph{Fitchner Memo}
+
+In the early 1930s, Adolf Berle and Gardiner Means famously coined the phrase of the ``separation of ownership and control,'' meaning that there were not anymore blocks of ownership large enough to wield effective control over U.S. publicly listed corporations. 8 The dispersion of corporate ownership that Berle and Means observed empirically represented a markedly changed situation compared to the first decades of the twentieth century, when most large corporations had been owned and controlled by banks and bankers---what Rudolf Hilferding referred to as Finanzkapitalismus (finance capitalism). 9 Dispersed ownership however entailed that instead of the owners, it was the managers and directors who wielded control. This, in turn, led to the recognition of the principal-agent problem that underlies modern corporate governance theory: Given their collective action problem, how can the suppliers of capital (principals) ensure that the managers (agents) act in their best interests? In response to this question, corporate governance regulation has progressively shifted towards a more powerful position for shareholders. The extent to which the separation of ownership and control took shape has been a debate ever since. Nonetheless, there is an overwhelming consensus that since the second half of the twentieth century corporate ownership in the United States is by and large fragmented and dispersed.
+
+Early signs of a fundamental change in the organization of corporate ownership emerged in the late twentieth century. Useem signaled the growing importance of mutual funds in the early 1990s and argued that we have moved from shareholder towards investor capitalism. 11 After the turn of the century and more than seven decades after Berle and Means, Davis went a step further and argued that the rapid rise of assets invested by actively managed mutual funds in equity markets and the ensuing re-concentration of corporate ownership led to a ``new finance capitalism.'' 12 Davis found that by 2005 active mutual funds had accumulated 5 percent blockholdings in hundreds of publicly listed U.S. companies. Being the single largest shareholder thus gave the biggest mutual funds---such as his running example Fidelity---potential power over the corporate governance of these listed companies by means of dominating corporate elections.
+
+However, despite this great potential power, actively managed mutual funds at that time did not seek to influence corporate decision-making. Davis mentions three reasons for this. First, he points out that owners holding more than 10 percent of voting rights are considered as ``insiders,'' which significantly restricts their trading possibilities. Second, actively managed mutual funds are faced with potential conflicts of interest because the firms they are invested in are often also their clients. Particularly eminent is this where mutual funds are large providers of pension fund management for corporations. This curbs the willingness of funds to pursue shareholder activism. 13 Third, and more general, shareholder activism is always costly---and the costs are borne only by the activist, while the benefits are enjoyed by all shareholders. Hence, Davis concluded that ``networks of concentrated yet liquid ownership without control seem to be the distinctive feature of the new finance capitalism.'' 14 Davis pointed out that this observed new finance capitalism is historically unique, but also cautiously concluded that its durability remains to be seen. One decade later, we can safely conclude that the re-concentration of corporate ownership was not a temporary market anomaly, but a fundamental reorganization of the system of corporate governance. However, the period 2005--15 is also one of significant transformation of the new finance capitalism.
+
+A remarkable feature of the passive index fund industry is its high level of concentration. In the ETF segment, the market shares in December 2016 have been 37 percent for BlackRock, 18.5 percent for Vanguard, and 15.5 percent for State Street, respectively. 20 Hence, together these three firms stand for a stunning 71 percent of the entire ETF market; all other ETF providers have market shares below 3.3 percent. Data about market shares in index mutual funds are not publicly available, but it seems clear that Vanguard dominates this segment with probably at least 75 percent market share.
+
+BlackRock, Vanguard, and State Street dominate the passive index fund industry. Together they manage over 90 percent of all Assets under Management (AuM) in passive equity funds.
+
+Although the Big Three have in common that they are passive asset managers, they are quite different in their own corporate governance structures. BlackRock is the largest of the Big Three---and represents the biggest asset manager in the world. At mid-2016, BlackRock had U.S. \$4.5 trillion in assets under management. 23 BlackRock is a publicly listed corporation and thus finds itself under pressure to maximize profits for its shareholders. Vanguard---with U.S. \$3.6 trillion in assets under management in mid-2016---is currently the fastest growing asset manager of the Big Three. In 2015, the group had inflows of U.S. \$236 billion, the largest annual flow of money to an asset managing company of all-time. 24 The main reason for the high growth of Vanguard is that it has the lowest fee-structure in the entire asset management industry. Vanguard is mutually owned by its individual funds and thus ultimately by the investors in these funds. Consequently, the group does not strive to maximize profits for external shareholders but instead operates ``at-cost,'' which allows Vanguard to offer the lowest fees in the industry. Vanguard pioneered passive investing by creating the ``First Index Investment Trust'' in 1975, however this investment approach was attacked as ``un-American'' at the time. 25 State Street is slightly smaller than BlackRock and Vanguard, but still one of the largest global asset managers. In mid-2016, it had U.S. \$2.3 trillion in assets under management.
+
+A passive investment strategy leads to the question of why passive investors would be interested at all to concern themselves with corporate governance at the level of individual firms. If a fund holds---for instance---500 stocks the risk of any individual stock will be irrelevant. Indeed the incentive structure of passive index fund managers is such that they are rewarded more for keeping the costs low than for improving firm governance.
+
+The decentralized attribution of ownership in separate funds and ETFs may hamper a centralized voting strategy in at least two ways. BlackRock for instance has more than 200 mutual funds and equity ETFs as well as several closed end equity funds and hedge funds---all of which could have positions in a particular firm. These portfolios may have different interests when it comes to shareholder vote. Even more differences occur because BlackRock holds some shares in short positions. Any vote that helps the long positions in BlackRock will hurt the short positions. So which way will BlackRock vote? These decentralized ownership structures may also hamper the ability to systematically use the voting power at all as it demands a serious coordination effort on behalf of the asset managers.
+
+The risks of individual stocks are largely irrelevant to their business model.
+
+While active investors can and will sell shares when they observe or anticipate diminishing (future) returns, passive investors are generally ``stuck.'' This means that their main interest is not short or medium term value creation, as is the case for most investors. Instead, their main interest is in long-term value creation.
+
+\includegraphics{fig/big3_ownership_map.jpeg}
+
+\textbf{Asset management capitalism and new financial risk}
+
+\emph{Stealth Socialism}
+
+The recent rise of the Big Three has already led to serious concerns that ``it cannot be good for capitalism.'' 59 A first and major concern is that a further increasing market share of passive index funds could impair efficient price finding on equity markets, as the proportion of actively traded shares would continue to shrink. This concern already led some to polemically argue that because passive funds take active fund managers out of the role of allocating capital, the outcome is ``stealth socialism.'' 60 One of the most outspoken regulators concerning this topic is Andrew Haldane from the Bank of England. In a speech in 2014, he argued that we have potentially entered the ``age of asset management'' due to enormous growth of assets under management in the last decades and the relative retreat of banks after the global financial crisis. 61 He sees indications that passive investing could increase investor herding and thus lead to more correlated movements of markets. In this way, passive index funds could intensify the pro-cyclicality of financial markets.
+
+A second concern regarding increased risk relates to the practice of securities lending. Passive asset managers regularly lend out shares to short-sellers to generate additional income. According to Cetorelli, BlackRock has increased its securities lending operations significantly in recent years. Indemnification of securities on loan by BlackRock more than tripled from U.S. \$40 billion in 2012 to over U.S. \$130 billion in 2014, while for State Street the value was even U.S. \$320 billion one year before. 62 Such securities lending---like most activities of large passive asset managers---seems to be unproblematic in good times, but could impair liquidity significantly in times of serious market stress. These developments have led global regulators to examine whether large asset managers, such as BlackRock, should be labeled ``systemically-important financial institutions.''
+On the other hand, concerns about reduced liquidity due to passive investment strategies may be moderated by the observation that ETFs themselves have become the object of active trading strategies.
+
+The active trading of passive index funds may have far reaching consequences. When passive index funds do indeed become the main building blocks for active investment, we are confronted with a fundamental reorganization of contemporary corporate governance. Because the voting rights reside with the asset managers who supply the passive index funds, and because the passive index fund industry is concentrated in the hands of the Big Three, this effectively means that the separation of ownership and control may potentially come to an end. After all, the active investors who trade with the passive building blocks no longer have access to the voting rights. And the Big Three accumulate the voting rights without much concern for short-term considerations. What is more, their interests are not restricted to the well-being of any particular firm. As mentioned, passive index fund managers arguably have little interest in fierce competition between their co-owned corporations, because this constitutes a zero-sum (or even negative-sum) game for them. Rather, they have industry or market-wide interests. Such developments may lead to a situation where the large owners of corporate businesses have limited incentives to engage with firm-level corporate governance beyond fulfilling their fiduciary obligations.
+
+\emph{Fitchner Conclusion}
+
+Since 2008, an unprecedented shift has occurred from active towards passive investment strategies. We showed that the passive index fund industry is dominated by BlackRock, Vanguard, and State Street. Seen together, these three giant, passive asset managers already constitute the largest shareholder in at least 40 percent of all U.S. listed companies and 88 percent of the S\&P 500 firms. Hence, the Big Three, through their corporate governance activities, could already be seen as the new ``de facto permanent governing board'' for over 40 percent of all listed U.S. corporations. 65
+
+An original and compressive mapping of blockholdings revealed that in the United States the market for corporate control shows unprecedented levels of concentrated corporate ownership. The Big Three occupy a position of ``structural prominence'' in this network of corporate governance. We furthermore found that while the proxy voting strategies of the Big Three show signs of coordination, they by and large support management. However, BlackRock, Vanguard, and State Street may be able to influence management through private engagements. Moreover, management of co-owned companies are well aware that the Big Three are permanently invested in them, which makes it possible that through this ``disciplinary'' effect they may internalize some common objectives of the passive index managers. On balance, we find significant indications that the Big Three might be able to exert forms of power over the companies held in their portfolios that are hidden from direct inspection.
+
+When Vanguard pioneered its index fund concept in the mid-1970s it was attacked as ``un-American,'' exactly because they held shares in all the firms of an index and did not try to find the companies that would perform best. Therefore, the new tripartite governing board of BlackRock, Vanguard, and State Street is potentially conflicting with the image of America as a very liberal market economy, in which corporations compete vigorously, ownership is generally fragmented, and capital is generally seen as ``impatient.'' 66 Benjamin Braun has argued that passive investors may, in principle, act as ``patient'' capital and thus facilitate long-term strategies. 67 Hence, the Big Three have the potential to cause significant change to the political economy of the United States, including through influencing important topics for corporations, such as short-termism versus long-termism, the (in)adequacy of management remuneration, and mergers and acquisitions.
+
+We reflected on a number of anticompetitive effects that come with the rise of passive asset management, which could have negative consequences for economic growth and even for economic equality. As well, we signaled how the continuing growth of ETFs and other passive index funds can create new financial risk, including increased investor herding and greater volatility in times of severe financial instabilities. The ongoing rise of the Big Three and the concomitant fundamental transformation of corporate ownership today clearly warrants more research to examine their impact on financial markets and corporate control---in the United States but also internationally.
+
+\href{https://www.cambridge.org/core/journals/business-and-politics/article/hidden-power-of-the-big-three-passive-index-funds-reconcentration-of-corporate-ownership-and-new-financial-risk/30AD689509AAD62F5B677E916C28C4B6}{Fitchner (2017) Hidden power of the Big Three? Passive index funds, re-concentration of corporate ownership, and new financial risk}
+
+\hypertarget{shareholder-democracy}{%
+\section{Shareholder Democracy}\label{shareholder-democracy}}
+
+\emph{Sommer}
+
+\begin{quote}
+Control of most public companies ---
+that is, the wealthiest organizations in the world,
+with more revenue than most states ---
+will soon be concentrated in the hands of a dozen or fewer people.
+\end{quote}
+
+In the near future, giant index funds, those low-cost investments that have helped millions of people to build nest eggs, will gain ``practical power over the majority of U.S. public companies.''
+That nightmarish vision originated in a prescient 2018 paper by John Coates.
+
+Index funds, which simply track the market and make no attempt to outperform it, are so effective and cheap, he said, that they have become the investment vehicle of choice for trillions of dollars of assets. Yet under current rules, it is the index fund executives, not the millions of people who invest in them, who have the power to cast proxy votes.
+
+That lack of proxy voting capability leaves vast numbers of investors out of the equation, and gives corporations inordinate power.
+
+When major fund companies receive compensation from corporations, they tend to side with corporate management even more frequently than usual.
+
+The fundamental cure would be to take proxy voting power away from the fund companies and put it in the hands of millions of fund shareholders.
+
+\href{https://www.nytimes.com/2021/05/21/business/stock-funds-shareholder-democracy.html}{Sommer (2021) Future True Shareholder Democracy}
+
+\textbf{The Problem of Twelve}
+
+\emph{Coates Abstract}
+
+Three ongoing mega-trends are reshaping corporate governance: indexing, private equity, and globalization. These trends threaten to permanently entangle business with the state and create organizations controlled by a small number of individuals with unsurpassed power. The essay focuses on indexation. After providing background, the essay describes the rise of and reasons for indexation, noting that ``passive'' indexed investing takes a variety of forms. Data on indexation are presented --- with the bottom line that indexation has progressed farther than most realize, because foreign ownership, institutional indexation, and ``closet'' indexation are often neglected by observers. Index providers' incentives, resources, and methods are reviewed, with an emphasis on the how such providers have greater practical importance than simpler analytical approaches might suggest. The essay ends with an outline of policy options, and preliminary analyses of which seem likely to address the ``Problem of Twelve'' --- the likelihood that in the near future roughly twelve individuals will have practical power over the majority of U.S. public companies.
+
+\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3247337}{Coates (2019) The Problem of Twelve}
+\href{pdf/Coates_2019_The_Problem_of_Twelve.pdf}{(pdf)}
+
+\hypertarget{direct-indexing}{%
+\section{Direct Indexing}\label{direct-indexing}}
+
+\emph{Planet Tracker}
+
+An oligopoly of major index providers -- MSCI, FTSE Russell, S\&P Dow Jones and
+Bloomberg -- are being challenged by innovative competitors. The index `majors' are
+some of the most powerful players in the financial markets. If the drive towards self-
+indexing continues -- and financial institutions have been positioning themselves for
+such a move -- investors of all types will be able to choose from a much wider range of
+products.
+The sustainable investor could be the catalyst for this change, providing them with
+the opportunity to invest in line with their personal principles, rather than taking
+the templates on offer. And for the braver ones, direct indexing is becoming more
+widespread. As for the corporates, being included in a popular sustainable index could
+provide them with a cost of capital advantage. Things are looking up for sustainable
+investors and sustainable companies
+
+The index production landscape is evolving to meet the demands of
+sustainability-based investment products. Declining fund fees, rising
+competition in index production and demand for greater consumer
+choice have all arrived at the same time as the upswing in sustainable
+investing.
+
+There are four main index providers for ETFs -- MSCI, FTSE Russell, S\&P Dow Jones and Bloomberg.
+There is also another tier of index providers across asset classes which
+are challenging this oligopoly.
+These include CRSP, Morningstar, Qontigo and Solactive.
+
+Solactive sells `tailormade' solutions as well as being `dedicated to developing
+customized indices'.
+Growing competition also exists from industry participants, including asset
+managers and investment banks, that create their own indexes'
+
+MSCI reveals dependency on the largest financial institutions with
+BlackRock accounting `for 11.0\% of our total revenues'.
+
+Two interesting examples of notable increases in
+index demand: fixed income and ESG (environmental, social and governance).
+In 2019, fixed income indices rose 7\% year-on-year, driven by Europe,
+the Middle East and Africa (EMEA).
+ESG indices rose by 14\% across both equities and fixed income.
+The IIA snapshot for 2020 reveals continued growth in
+fixed income indices of 7\% but a leap in ESG demand by 40\%.
+
+ESG investing is `the growth opportunity of the century'.
+
+If we then move the trillions of dollars of money away
+from traditional indexes into these more sustainable or ESG-based indexes, that's going to
+shape finance in a substantial way.
+
+Testing further customisation
+with STOXX iStudio, which provides the customer with the tools to build their own index.
+This suggests Deutsche Börse is willing to become a disruptor.
+
+So, are the index majors caught between a rock and a hard place? If they provide ever more
+customisation, they undermine the profitability of their existing business model, especially in relation
+to their most popular indices -- e.g.~S\&P 500, FTSE 100, MSCI World etc.
+But there's a further issue. Will increasing customisation, driven by sustainable demand, lead to
+greater regulatory scrutiny? Some regulators have already expressed concerns. In 2018, the EU
+Benchmark Regulation (BMR) was introduced amid fears about the accuracy and integrity of indices
+used as benchmarks in EU markets, following the LIBOR g scandal. BMR imposes requirements for
+organizations that provide, contribute data to and reference financial benchmarks. 30 To further
+complicate the issue, regulators will need to ensure that the largest Asset Managers, which may sit
+on Advisory Boards of the Index Providers or provide advice, are unable to exert influence over the
+formulation of indices.
+
+Index providers are viewed as data publishers by the SEC, rather than investment advisers. Should
+there be a regulatory distinction between broad indices and the customised varieties?
+
+Presently, it appears that only financial institutions and ultra-high net worth individuals (UHNWIs)
+are reaping the full customisation benefits. Many retail investors are left with limited options when
+using the fund platforms of the major financial institutions.
+
+Perhaps the most exciting development for supporters of sustainability and ESG strategies may be
+an unintended consequence. If corporate management teams become convinced that the inclusion
+of their company in an index is one of the most important drivers of a share price, then there could
+be a scramble by executives to adopt more sustainable and ESG strategies, in order to win access to
+these indices and possibly lower their cost of capital. A race to the top that would be welcomed by
+many.
+
+\href{https://planet-tracker.org/tracker-programmes/cross-programme-papers/\#indexing-prepare-for-sustainability-driven-disruption}{Planet Tracker (2021) Sustainability-Driven Disruption}
+\href{pdf/Planettracker_2021_Indexing.pdf}{(pdf)}
+\href{https://planet-tracker.org/large-index-providers-should-prepare-for-disruption-says-planet-tracker/}{Press Release}
 
 \hypertarget{institutional-investors-1}{%
 \chapter{Institutional Investors}\label{institutional-investors-1}}
@@ -2105,6 +2990,323 @@ potential drivers of instability for aggregate demand.
 \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820316}{Rothenberg (2021) ESG 2.0 - Measuring \& Managing Investor Risks Beyond the Enterprise-level}
 \href{Rothenberg_2021_ESG2.pdf}{(pdf)}
 
+\hypertarget{capital-markets}{%
+\chapter{Capital Markets}\label{capital-markets}}
+
+\hypertarget{china}{%
+\section{China}\label{china}}
+
+\emph{Petry Abstract}
+
+Since 2009, China's capital markets have developed and internationalized to an unprecedented
+degree, which has contributed to a lot of debates on China's rise and its implications for the
+global financial order. Contributing to these debates, this article analyses the development of
+capital markets in China and their integration into global finance between 2009 and 2019, focusing
+on three aspects: how Chinese capital markets are developing domestically; how they are inte-
+grating with global markets; and how Chinese capital markets are internationalizing, i.e.~expanding
+abroad. Thereby, the article analyses the crucial role of securities exchanges who as organizers of
+capital markets are powerful actors that exercise considerable influence over these markets and
+their development. This empirical investigation reveals that while they share some characteristics
+with `global' capital markets, Chinese capital markets function quite differently. The article argues
+that China's state-owned exchanges facilitate the development of state-capitalist capital markets --
+capital markets that follow an institutional logic derived from China's state-capitalist economic
+system. Rather than giving in to a neoliberal rulebook, China's capital markets represent an
+alternative to, resist and challenge the norms, principles and procedures of the contemporary
+global financial order. While different capital markets share some characteristics, they are insti-
+tutionally embedded, and these institutional settings facilitate different institutional logics that
+underpin and inform the functioning of markets. Instead of viewing capital markets as homoge-
+neous entities, the article therefore proposes to investigate a `varieties of capital markets' that are
+shaped by different institutional logics.
+
+\emph{Petry Memo}
+
+In 1989, capital markets did not exist in China. Fast forward three decades, China's capital
+markets have become the second largest equity markets, second largest futures markets and
+third largest bond markets globally.
+
+While China's markets had been virtually
+closed from the outside world for decades, especially since the global financial crisis (GFC)
+2007--2009, they have become connected to both regional and global financial markets `at an
+unprecedented pace'.
+
+This growing Chinese significance in global finance
+is also expressed by the internationalization of the renminbi,
+how their investments change financing patterns,
+China's growing
+role in development finance and global financial governance,
+and with the Belt-and-Road Initiative (BRI).
+
+The rapid growth of China's capital markets takes place within the context of a global
+financial order (GFO) based on neoliberal principles of open, lightly-regulated, internation-
+ally-integrated financial markets, guaranteed and facilitated by US power.
+Scholars are therefore debating whether China is a
+status quo power integrating into the GFO,
+a reforming power,
+a revisionist power challenging this (neo)liberal, US-dominated financial order
+or whether global finance is itself adapting to accommodate China.
+
+This discussion is linked to broader debates on state capitalism,
+where some policy makers fear that China will not play by the neoliberal
+rulebook on which the contemporary global (financial) order is based.
+
+In these debates, state capitalism is often
+defined in juxtaposition to capital markets, the epitome of liberal capitalism.
+
+By linking state capitalism, capital markets and the neoliberal GFO, this article contrib-
+utes to these debates, seeking to make a twofold contribution. Empirically, the article anal-
+yses the post-GFC reform and opening process of China's capital markets between 2009 and
+2019. This empirical investigation reveals that capital markets in China function
+significantly different from `global' markets. While many Western commentators argue
+that `proper'
+capital markets do not exist in China, this article argues that such assessments actually
+reflect the neoliberal bias that Western views of markets exhibit, thereby shedding light
+on the contested politics between different types of capital markets championed by China
+and the US. Theoretically, the article therefore proposes to re-evaluate common global
+political economy (GPE) conceptions of capital markets: instead of viewing these as uniform
+entities, in opposition to the state and interlinked with the concept of neoliberalism, to look
+at an institutionally embedded `varieties of capital markets'.
+
+In China one can observe the development of \emph{state-capitalist capital markets}
+as Chinese capital markets are intricately linked with state institutions
+and play an active role in facilitating national development goals.
+The article examines the crucial role of China's (stock and derivatives) exchanges as
+important actors who organize markets in a way that facilitates state-capitalist logic, shap-
+ing capital market dynamics and directing market outcomes towards state objectives, both
+within China and internationally. The capital markets organized by China's exchanges
+thereby provide an alternative to, resist pressures to conform with, and even challenge
+the neoliberal capital markets that underpin the GFO. In other words, no matter how
+deep the reforms, Chinese capital markets will not converge with global markets but
+rather maintain their distinct character.
+
+As such, the capital markets underpinning
+the GFO facilitate and perpetuate existing power relations and hierarchies within global
+capitalism.
+State capitalism is
+often defined as the anti-thesis of such governance through markets, as the state's
+predominance over markets and impairment of `free' market mechanisms.
+Proponents of liberal, free markets argue that there might be state capitalism in China,
+but not `true capitalism'.
+
+Moving beyond the fact that states and capitalism have historically been in an intimate
+relationship, state capitalism literature focuses on a more recent
+empirical phenomenon -- the increasing intensity of government direction and steering in
+economic processes, especially in emerging markets.
+
+In contrast to earlier forms of state-led eco-
+nomic development in the late-19th (US, Germany) and mid-20th century (Stalinism, fas-
+cism, developmental states), contemporary state capitalism relies less on prohibitive tariffs
+(first wave) or centralized command structures (second wave) but more on market-based
+economic coordination which, however, is controlled, steered or influenced by the state.
+
+State capitalism highlights `the essentially
+capitalist nature of the {[}socio-economic{]} system' where markets are important but `the
+state plays a very large role' through intervening into the economy and state-ownership.
+
+While the Chinese state has recognized the usefulness of market-based mechanisms for
+economic coordination, `free' markets are seen as something not quite to be
+trusted, endogenously crisis-prone, socially unproductive and leading to a loss of control
+over the economic system if not strictly regulated.
+The state rather
+engages in a `pragmatic use' of markets, managing markets for specific policy goals.
+
+State-owned banks are the main actors in China's financial system.
+State capitalism is often understood in juxtaposition to capital markets, the epitome of
+liberal capitalism. However, capital markets have become more important in China since
+the GFC.
+
+In GPE literature,
+states and markets have long been analysed as opposing institutions prevailing over or
+constraining each other's actions.
+While the role of states
+in promoting capital markets has been well-documented and more recently
+a focus has emerged around `governing through financial markets',
+capital markets and their organization are often conceptualized as uniform, and divergencies
+between markets and the sources of these differences are seldom the focus of GPE analyses.
+
+In the comparative capitalism literature, state and market are also defined as
+mutually exclusive for economic coordination within national economies.
+
+Especially with regard to the financial system,
+either the state facilitates credit provision, mainly through state-owned and policy-banks,
+or market relations fulfil this role. Markets are coordination mechanisms
+that result from certain institutional arrangements -- but capital markets themselves are
+often conceptualized as homogenous, with little internal variegation.
+
+If not all markets are equal,
+they might produce different outcomes and socio-economic effects. What is missing is a
+better understanding of the differential organization of capital markets.
+
+In contrast to the premise that markets are uniform, following the likes of Keynes and
+Polanyi, economic sociology has shown that markets are `embedded in distinct sets of social
+and political institutions'.
+Markets are social phenomena that are
+embedded in and influenced by man-made institutional arrangements.
+How and by whom markets are organized matters. For capital markets, this function is
+mainly fulfilled by securities exchanges.
+Instead of mere institutions/platforms on which
+market transactions take place, exchanges are powerful actors in their own right who active-
+ly organize and shape capital markets.
+`Power often depend{[}s{]} on control over key financial infrastructures' that enable
+the functioning of financial markets.
+
+Exchanges are such actors whose business is to orga-
+nize, create and control their infrastructural arrangements. Rather than investors who are
+active within markets, as infrastructure providers exchanges play a more architectural role
+for capital markets. By deciding the `rules of the game' and acting as gatekeepers in capital
+markets, deciding who gets in, what is traded and how trading is conducted, exchanges are
+crucial in shaping capital markets.
+
+But both capital markets and exchanges are embedded and shaped by their institutional
+environment. These institutional configurations
+create a particular contextual ``logic'' or rationality of economic action. Every economy
+consists of a set of institutions which create distinct patterns of constraints and incentives
+that shape and channel actors' behaviours (Zysman, 1994: 245--246). Hence, given the
+existing institutional structure, a particular institutional logic emerges
+that is distinct from
+other institutional contexts. So, while functionally all capital
+markets are characterized by market-based mechanisms of coordination between buyers,
+sellers and investors, applying the concept of institutional logic to capital markets reveals
+how the institutional embeddedness of markets and market organizers shapes these markets,
+leading to different market dynamics and outcomes.
+
+Consequently, how exchanges (i.e.~market organizers) are governed and which con-
+straints and incentives they face matters. In the West, exchanges are publicly traded com-
+panies that have to make profitable business decisions to increase shareholder value; they
+are situated within an institutional setting informed by a neoliberal institutional logic.
+
+Six global exchange groups (GEGs) dominate global capital markets: account-
+ing for 50\% of exchange industry profits, futures trading volume and stock market
+capitalization globally.
+
+The ostensible purpose of these capital markets that underpin the neoliberal
+GFO is to achieve `efficiency' by enabling the generation of (private) profit, which is
+achieved by the principles of `free markets' and `free flows of capital' that should be respon-
+sible for allocating economic resources without state intervention.
+
+The underlying neoliberal institutional logic that informs the functioning of
+these markets depoliticizes those
+markets, proposes a (`supposed') separation between state and capital markets, and puts
+a significant degree of trust and power in the collective agency of private (financial) capital
+actors to achieve `efficient' outcomes by maximizing (private) profit.
+While the state is not absent, its priority is enabling private profit creation
+instead of other socio-economic outcomes, cementing the power of private finance capital.
+
+Merely adopting market-
+mechanisms (e.g.~capital markets) does not make China neoliberal. While market-based
+finance emerged as an important economic governance tool in China (Gabor, 2018),
+Chinese capital markets function fundamentally different than neoliberal capital markets.
+This is because exchanges and capital markets are situated within a very different
+institutional context -- that of state capitalism.
+The institutional logic of China's state capitalism is
+not simply one of command-and-control but a combination of top-down state coordination
+and bottom-up market competition.
+
+China's capitalism `relies on a unique duality or dialectic whereby state-
+capitalist features are balanced by {[}. . .{]} a variety of hybrid institutional arrangements'
+(also, Sum, 2019). Chinese capital markets also follow this institutional logic. Bottom-up
+you have millions of profit-driven speculating investors that create manias, panics and
+crashes like in any capital market. But while profit creation for private finance capital is
+the primary underlying principle in neoliberal markets, importantly, in China, the state
+intervenes into capital markets to steer them into `productive' tracks that facilitate state
+objectives. The defining difference between neoliberal and state-capitalist logic is not the
+existence of markets per se but rather the principles that underlie market organization
+(profit creation vs state objectives) and the actors that dominate/shape these markets (pri-
+vate finance capital vs state institutions).
+
+While investors act as entrepreneurs, `certain levers of state control remain intact'.
+As the organizers of capital markets, exchanges remain strictly in
+government control.
+These `infrastructural
+arrangements {[}are important{]} because this is where you can control the market'. 5 The
+exchanges are also deeply embedded in the \emph{nomenklatura system}; doing a
+good job as senior exchange manager (i.e.~directing markets towards state policies)
+is important for party officials to eventually get promoted to higher positions.
+`The financial industry can therefore justifiably be treated as an integral part of the
+political system'. In contrast to being `marketized', exchanges in China are rather `politi-
+cized'. Therefore, capital markets can be understood as a site where the authorities exercise
+`statecraft {[}through{]} financial control'.
+
+Chinese exchanges organize
+markets by designing market infrastructures that aim to shape market behaviour by mon-
+itoring, regulating and managing the behaviour of market participants and direct market
+outcomes towards the accomplishment of state objectives, both within China and abroad.
+Rather than neoliberal, the capital markets organized by China's state-owned exchanges
+should hence be conceptualized as \emph{state-capitalist capital markets}.
+
+Neoliberal or state-capitalist,
+they are both capital markets populated by profit-driven investors and prone to speculative
+dynamics. However, what can be observed is that in China, a fundamentally different way of
+thinking about, managing and governing capital markets has emerged, as these markets are
+permeated by but also reproduce the institutional logic of Chinese state capitalism.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Chinese exchanges develop markets that represent a \emph{distinct alternative} to neoliberal
+  capital markets.
+\item
+  China's integration into global finance through its exchanges (largely) conforms
+  with state-capitalist logic, demonstrating their resistance to conform with neoliberal
+  capital markets.
+\item
+  Chinese capital markets not only resist
+  but also challenge US-dominated neoliberal capital markets.
+\end{enumerate}
+
+The growing importance of market-based finance in China does not
+represent a shift towards neoliberalism but rather a perpetuation of Chinese state capitalism
+through financial means.
+
+In 2017, Xi Jinping noted that the tasks of China's financial sector were
+above all `{[}to{]} better serve the real economy!
+Markets are organized to facilitate these policies.
+
+The partially contradictory nature
+of state-capitalist institutional logic. On the one hand, the state aims to control financial
+instability, and on the other hand, it has interwoven social stability with capital market
+participation which in turn potentially decreases financial stability
+
+The exchanges' system of risk monitoring and management
+is used in a delicate balancing act between allowing retail investors
+to participate in markets but also reduce the volatility that they bring into markets, profes-
+sionalize/educate them and protect them from themselves and more sophisticated investors.
+
+China has an ambiguous relationship with foreign
+investors. As one interviewee stated, `it's absolutely a love and hate story, they love the
+money, love the stability, hate giving up control. . . and hate it if foreign investors want to
+dominate the terms'.
+
+Foreigners are not allowed to freely participate in Chinese markets but only if they
+establish local entities, so-called wholly foreign-owned enterprises (WFOEs). 36 As several
+interviewees noted, setting up WFOEs to trade in capital markets is accepted by the author-
+ities -- because they are registered in China, subject to Chinese laws, funds/profits cannot be
+easily repatriated, and they can be monitored and controlled by the Chinese exchanges.
+One called China a `façade of an open market'.
+
+`Step by step there is a whole market infrastructure
+emerging' that connects China with the outside world. 50 But while China is increasingly
+integrating with global finance, international investors have to play according to Chinese
+rules. Attempts to shape market behaviour and steer market outcomes are maintained by
+China's exchanges, following China's state-capitalist logic of organizing capital markets,
+and demonstrating China's resistance to conform with neoliberal capital markets underpin-
+ning the GFO.
+
+In their current form, global markets are not perceived as fair but as being stacked against
+Chinese interests, rather benefitting Western private financial actors.
+Similar to RMB internationalization, the internationalization of China's capital mar-
+kets is part of the state's strategy to change the rules of the game in global finance or at least
+to create a level-playing field that does not disadvantage China.
+
+This case study hence highlights the need to re-evaluate the conceptual toolbox with
+which we analyse global finance. In political economy literature, capital markets are often
+viewed as homogeneous entities, an analytical category different from/contrary to `the
+state', and capital market development is often linked to a neoliberal policy paradigm.
+However, as the findings of this article demonstrate, conceptually capital markets (and
+exchanges) should be analysed separate from neoliberalism.
+
+\href{https://journals.sagepub.com/doi/10.1177/1024529420964723}{Petry (2020) Same but different}
+\href{pdf/Petry_2020_Same_but_different_China_Capital_Markets.pdf}{(pdf)}
+
 \hypertarget{climate-finance}{%
 \chapter{Climate Finance}\label{climate-finance}}
 
@@ -2221,6 +3423,19 @@ Accounting standards are not neutral, but they systematically affect capital all
 
 \href{https://www.lse.ac.uk/granthaminstitute/news/double-materiality-what-is-it-and-why-does-it-matter/}{Täger}
 
+\hypertarget{financial-crises}{%
+\chapter{Financial Crises}\label{financial-crises}}
+
+\hypertarget{diversification}{%
+\section{Diversification}\label{diversification}}
+
+The 2008 financial crisis was triggered, in part, by extreme
+interconnectivity among financial institutions, making diversifi-
+cation impossible.
+
+\href{https://www.sciencedirect.com/science\%20/article/pii/S2590332221002359\#undfig1}{Crona (2021) The Anthropocene reality of financial risk}
+\href{pdf/Crona_2021_Anthropocene_reality_of\%20Financial_Risk.pdf}{(pdf)}
+
 \hypertarget{digital-currencies}{%
 \chapter{Digital Currencies}\label{digital-currencies}}
 
@@ -2272,6 +3487,292 @@ increasingly emerge.
 \href{https://www.cigionline.org/publications/central-bank-digital-currency-and-governance-fit-purpose}{Siklos}
 \href{pdf/Siklos_2021_Central_Bank_Digital_Currency.pdf}{(pdf)}
 
+\hypertarget{esg}{%
+\chapter{ESG}\label{esg}}
+
+\hypertarget{win-win}{%
+\section{Win-Win}\label{win-win}}
+
+\emph{Austin}
+
+It has been increasingly clear that our predominant response to the sustainability crisis over the last 3 decades -- the voluntary market-based approach of ESG, `impact investing' and sustainable business in general -- has not been able to bend environmental trajectories as much as hoped. This inevitable clash of sustainability interpretations now forces the ESG community into a difficult, but potentially catalysing, reflection of two fundamental issues: (i) the credibility of its `win-win' narrative and (ii) the sustainability of `economic growth'.
+
+\includegraphics{fig/win-win_vs_net-zero.jpeg}
+
+The challenge for the sustainable business community is that, as a market-based movement, it has generally not questioned `economic growth'. Sustainable business certainly espouses a preference for green growth, but that merely reinforces growth-favouring norms, with the consequence of waving through mostly non-green growth, at a time when environmental buffers are diminishing.
+
+We are missing the physics for the finance. A major cause of our sustainability problems is that the economic values we steer by are so decontextualised from the underlying natural world that a core aspect of the sustainability challenge is to see through the blindness that economic and financial conventions induce.
+
+Our ecological problems are rooted in matter and energy flows not financial flows. Our situation has arisen because we have transformed the matter and energy of the world at a much faster rate than the natural world can absorb. Given the entropic toll of every transformation, it is our underexamined urge to keep transforming -- even with good intention -- that is the core driver of our ecological crisis. But, in what sustainability researcher Pasi Heikkurinen has termed our `transformation paradox', our instinctive response to problems caused by past excess transformation of the world's matter and energy is to keep transforming! Our increasingly urgent ambition to build a green economy masks the deeper point that we remain firmly upon a transformation treadmill. We say `greener', the Earth just registers `more'.
+
+In races against time, possibly the most precious commodity is more time. How can we buy time for our sustainability crisis? By slowing down those parts of the economy making no contribution to a greener future economy.
+
+Critically, the de-growth or post-growth that advocates have in mind is not the sporadic recessions that upset our prevailing growth mindset, but rather an intentional, radical transformation and re-conception of prosperity and welfare, complete with transitional justice.
+
+{[}Austin (2021) From Win-Win to Net-Zero{]}(\url{https://www.responsible-investor.com/articles/from-win-win-to-net-zero-would-the-real-sustainability-please-stand-up9}
+\href{pdf/Austin_2021_Win-Win_Net-Zero.pdf}{(pdf full)}
+
+\hypertarget{externalities-risks}{%
+\section{Externalities Risks}\label{externalities-risks}}
+
+\emph{Crona}
+
+Globally, financial services are well positioned to contribute to the transformation needed for sustainable fu-
+tures and will be critical for supporting corporate activities that regenerate and promote biosphere resilience
+as a key strategy to confront the new risk landscape of the Anthropocene. While current financial risk frame-
+works focus primarily on financial materiality and risks to the financial sector, failure to account for invest-
+ment externalities will aggravate climate and other environmental change and set current sustainable finance
+initiatives off course. This article unpacks the cognitive disconnect in financial risk frameworks between envi-
+ronmental and financial risk. Through analysis of environmental, social, and governance ratings and esti-
+mates of global green investments, we exemplify how the cognitive disconnect around risk plays out in
+practice. We discuss what this means for the ability of society at large, and finance in particular, to deliver
+on sustainability ambitions and global goals.
+
+\includegraphics{fig/externalities_risks.png}
+
+Global issuance of green bonds recently
+surpassed \$250 billion, representing ca. 3.5\% of total global
+bond issuance (\$7.15 trillion)
+
+The multiple, often complex, mechanisms by which environmental change un-
+folds and is aggravated by investments are not equally recognized.
+
+Climate, biodiversity loss, water, and land-use change
+are not isolated phenomena, but directly interconnected and
+mutually reinforcing processes.
+
+For example, deforestation to
+produce oilseed in one region leads to regional drought affecting
+the oilseed production itself, but also affecting geographically
+distant sectors, such as aquaculture reliant on oilseed for
+feed input.
+
+Failure to see these connections matters. If they are not recog-
+nized in risk assessment tools, strategies, and solutions used to
+address the problem, these will deliver only partial results.
+
+Most detrimental risks of climate change on portfolios may
+very well arise from second-order effects.
+
+This article contrasts widespread conceptions of climate-
+related financial risks (such as those of the Taskforce on
+Climate-Related Financial Disclosures {[}TCFD{]}) with insights
+from Earth system science, to highlight the disconnect between
+environmental and financial risk in prominent financial risk frame-
+works. We show the necessity of a broader conceptualization of
+climate and environmental risk to avoid devastating impacts on
+the economy, society, and biosphere as a whole. We then use
+environmental, social, and governance (ESG) investments as a
+means to exemplify how the cognitive disconnect plays out in
+practice and its implications for the ability for society at large,
+and finance in particular, to deliver on sustainability ambitions
+and global goals.
+
+Multiple sources of scientific evidence show that a stable
+climate is determined not just by GHG emissions, but by a com-
+plex set of interactions between human activities and large-scale
+biological, geological, and physical processes related to, e.g.,
+forest and land-use dynamics, global hydrological flows, and
+radiative forcing.
+
+Climate stability hinges not just on the atmosphere.
+
+Financial risk frameworks explicitly aimed at
+incorporating climate systemic risk (e.g., Aglietta and Espagne) 40
+fail to recognize that propagation mechanisms can also be linked
+to interconnections between Earth system processes. They
+consider merely social and economic elements.
+
+Many disasters have happened because of a failure to imagine
+that they were possible and therefore to build insurance to be
+prepared.
+
+The exceptional development in risk definitions in the financial
+sector over the past 3 decades. A similar
+trend is supported by the shifting focus of risk discussions in
+the annual reports by the World Economic Forum. 55 This rapid
+development in the definition of financially relevant risks shows
+that a shift to also consider aggravation risk is possible
+
+\emph{alfa and beta only}
+
+Managing investment risk hinges on diversifica-
+tion. Conventional portfolio risk management is limited to diver-
+sifying idiosyncratic risk (managing alpha) by selecting securities
+across different financial assets. It further assumes that this
+diversification has no influence on market-wide issues that could
+affect multiple asset classes (beta).
+
+The assumption---that systemic risks affect
+investments, but are not affected by these same investments---is
+the single biggest theoretical failing of modern portfolio theory.
+
+For large institutional investors and so-called ``universal
+owners,'' with highly diversified and long-term portfolios repre-
+sentative of entire capital markets, climate change has already
+been recognized as a key driver of future value and not an exter-
+nality.
+
+Coalitions have therefore emerged to rally this highly
+concentrated segment of the financial sector into action (see,
+e.g., Climate 100+, with over 500 investors as signatories and
+more than US\$47 trillion in assets under management), yet to
+date these remain focused only on shifting away from fossil fuels
+and do not consider the interconnected dynamics between eco-
+nomic activity, Earth system dynamics, and biosphere resilience.
+
+A 7-fold increase in claimed losses (from \$50 billion in 1980 to \$350 billion in 2017).
+
+\emph{Crisis of insurablility}
+
+As climate change-related risks, such as storms, fires, and
+sea-level rise, all mount and occur simultaneously, the sheer vol-
+ume of material assets affected and the multiple types of liabil-
+ities incurred threaten to trigger a crisis of insurability.
+
+Climate change will affect
+many sectors simultaneously in the future. As such it will affect
+financial institutions by reducing their capacity to diversify.
+
+Most financial risk assessment
+still relies on historical data, and would underestimate or
+completely miss the potential for thresholds and cascading ef-
+fects not previously experienced.
+
+ESG frameworks are a good example of how the cognitive
+disconnect plays out in practice. ESG refers to a collection of often
+divergent approaches to using non-financial data for socially
+responsible investment strategies. ESG grew out of a socially
+responsible investment movement emerging as early as the
+1960s, and early versions were motivated by a belief in sustainable
+development, adopted a systems view, and focused on capturing
+absolute assessments of corporate externalities. However, as
+the interest in ESG issues rose in the wake of the 2004 UN Global
+Compact report, the financial materiality-driven rationale was
+favored by the major rating providers (such as MSCI). According
+to Eccles et al., this was because such an approach was easier
+to scale, was most closely aligned with investor needs for finan-
+cially focused assessments, and also arguably did not challenge
+investors to reflect on more complex externalities.
+This way of conceptualizing ESG issues now dominates sus-
+tainability approaches adopted by prominent norm-setting
+actors such as the SASB, the TCFD, and the limited set of ESG
+providers that hold the majority of market shares in the highly
+concentrated market segment of ESG rating services.
+
+Current ESG ratings are based on a risk
+perception that does not account for externalities, and therefore
+is unlikely to address the root causes undermining sustainability.
+
+Divergence in ESG
+ratings has spurred debates about what reliably constitutes a
+sustainable investee, as it prevents comparison of the performance of ESG investments.
+
+It runs an acute risk of developing sustainability strategies that are off the mark.
+
+In systems science it is well
+established that thresholds in systems are easily overshot
+when feedback has long delays, leading to collapse.
+
+Since shortening the time lag of how the Earth system operates
+is not possible, two things will be key to achieve a financial
+system that fundamentally promotes long-term sustainability:
+(1) incorporating the necessary information feedback and
+(2) developing structures by which this information is taken
+into account and acted upon. The two cannot be treated in
+isolation
+
+In 2019 only 14\% of total global investments were linked to any form of ``green'' label.
+While ``green'' or ``sustainability''-linked loans and bonds
+have experienced significant growth, they represented less
+than 0.5\% of total debt issued.
+
+(32\%) of the \$95 trillion of total equity in 2019 were ``green.''
+
+The bulk of green equity investments are in shares of
+listed companies that were deemed to be associated with
+any of the following procedures: positive, negative, or
+norm-based screening; any type of ESG integration; sustain-
+ability-themed (impact) investment; or engagement and
+shareholder action. 85 Taken together these stretch ``sustain-
+able investments'' to include a vast array of investment stra-
+tegies with arguably very different capacities to achieve sus-
+tainable outcomes.
+
+As long as \emph{central banks} continue to
+conceptualize prudential regulations as ``blunt instruments for
+dealing with climate-related externalities,'' and maintain that
+``adapting capital requirements to reflect externalities could
+undermine their primary purpose, or give rise to undesirable
+effects,'' it is questionable whether these efforts can become
+little more than a rearranging of the proverbial deck chairs of
+the ill-fated Titanic.
+
+Mainstream approaches for delivering on sustainability ambitions (such as
+ESG) are on a trajectory that is currently off the mark.
+
+Refining ESG metrics without incorporating measures of impact
+will increase precision, but fail to address accuracy.
+
+Today, unintelligent
+accountability appears to be rising in the financial sector, as a
+result of misalignment between sustainability ambitions and current
+risk frameworks and risk assessment measurements. This
+hampers the crucial role finance can and needs to play.
+
+Our analysis has highlighted three key actions that will sup-
+port the financial sector in bridging this gap: (1) recognizing a
+wider set of Earth system processes (including the climate
+and hydrological flows in addition to GHGs); (2) acknowledging
+that current risk frameworks lack an acknowledgment of the
+risk of aggravating climate and large-scale environmental
+change through investments; and (3) moving to develop impact
+accounting systems that cut across all financial investments
+and become a core part of capital allocation decisions. Doing
+this will require forging new alliances between science and
+finance, but also new transdisciplinary research to assist
+finance in developing risk management tools to better address
+the Anthropocene reality and ensure that the development of
+impact accounting is grounded in both social and environ-
+mental sustainability science.
+
+\begin{verbatim}
+Memo DH:
+Giving up on Governments, appealing to finance
+\end{verbatim}
+
+\href{https://www.sciencedirect.com/science/article/pii/S2590332221002359\#undfig1}{Crona (2021) The Anthropocene reality of financial risk}
+\href{pdf/Crona_2021_Anthropocene_reality_of\%20Financial_Risk.pdf}{(pdf)}
+\href{pdf/Crona_2021_Anthropocene_reality_of\%20Financial_Risk_SI.pdf}{(pdf SI)}
+\href{https://www.cell.com/one-earth/fulltext/S2590-3322(21)00235-9?_returnURL=https\%3A\%2F\%2Flinkinghub.elsevier.com\%2Fretrieve\%2Fpii\%2FS2590332221002359\%3Fshowall\%3Dtrue}{Alt link: One Earth}
+
+\hypertarget{climate-impact-management-system}{%
+\section{Climate Impact Management System}\label{climate-impact-management-system}}
+
+\emph{2i Investing}
+
+Recently, there has been a surge in financial sector initiatives focused on climate-related targets or strategies, with a number of big industry names making Net-Zero targets in the past few months alone.
+
+However, some commitments have centered on targets that are decades away, with little clarity on the near-term actions that will be undertaken to meet these targets. Additionally, there has been limited focus on understanding how these kinds of initiatives will contribute to impact -- that is, greenhouse gas emissions reductions -- in the real economy (see our previous report, On the Road to Paris).
+
+The Climate Impact Management System aims to fill this gap, by providing FIs with a clear roadmap to develop, refine, and communicate on impactful climate strategies. The system was developed by 2DII's Evidence for Impact Program and the French Ecological Transition Agency (ADEME), as part of the Finance ClimAct project.
+
+\href{https://2degrees-investing.org/new-climate-impact-management-system-opens-for-consultation/}{2i Investing}
+\href{pdf/Climate-Impact-Mgmt-System.pdf}{(pdf)}
+
+\hypertarget{etf-universe}{%
+\section{ETF Universe}\label{etf-universe}}
+
+\emph{VisualCapitalist}
+
+Globally, sustainable exchange-traded fund (ETF) assets hit \$150 billion last year, vaulting 25 times higher than in 2015.
+
+Yet despite this growth, sustainable ETFs---baskets of investments that focus on environmental, social and governance issues---account for roughly 5\% of the entire ETF universe.
+
+\includegraphics{fig/MSCI_Sustainable-Universe_210518.jpg}
+
+\href{https://www.visualcapitalist.com/visualizing-the-sustainable-etf-universe/}{VisualCapitalist}
+
 \hypertarget{fintech}{%
 \chapter{FinTech}\label{fintech}}
 
@@ -2297,7 +3798,19 @@ associated business and societal innovations.
 \hypertarget{imperialism-and-financialism-1}{%
 \chapter{Imperialism and Financialism}\label{imperialism-and-financialism-1}}
 
-\emph{Bichler \& Nitzan}
+\hypertarget{dollar-empire}{%
+\section{Dollar Empire}\label{dollar-empire}}
+
+\emph{Johnson Memo}
+
+The world economy is structured by countries with competitive export sectors and trade surpluses, like Germany and China, who exhibit underconsumption and excess savings; the US's debt-fueled economy receives these savings through its domination of global financial markets. The dynamic strengthens the power of global finance at the expense of wages and living standards.
+
+\href{https://phenomenalworld.org/analysis/reconstruction-finance}{Johnson}
+
+\hypertarget{capital-as-power}{%
+\section{Capital as Power}\label{capital-as-power}}
+
+\emph{Bichler \& Nitzan Memo}
 
 Over the past century, the nexus of imperialism and financialism has become a major axis
 of Marxist theory and praxis. Many Marxists consider this nexus to be a cause of worldy
@@ -2944,6 +4457,15 @@ Advertisement
 Officials said there would be no blanket requirements for companies to stop financing coal, for instance, and banks would be allowed to make their own judgments on the carbon content of their portfolios, on a case by case basis.
 
 \href{https://www.theguardian.com/business/2021/apr/21/leading-finance-firms-sign-up-to-mark-carney-forum-on-low-carbon-investment}{Guardian}
+
+\hypertarget{biodiversity-and-financial-stability}{%
+\section{210406 Biodiversity and Financial Stability}\label{biodiversity-and-financial-stability}}
+
+\textbf{NGFS and INSPIRE launch a joint research project on `Biodiversity and Financial Stability'}
+
+A growing number of central banks and supervisors have recognised the need to extend their focus from climate change to the challenges of addressing the implications of broader nature-related risks and the conservation of nature and biodiversity. Doing this will involve understanding the impact of finance on the provision of key ecosystem services as well as the consequences of biodiversity loss for financial stability.
+
+Companies are highly dependent on the services that ecosystems provide, but may at the same time have a harmful impact on the environment. The financial risks that stem from a loss in biodiversity are a serious threat to the financial sector that urgently require better understanding by policy makers and regulators to which the new NGFS/INSPIRE Study Group will provide an important contribution.
 
   \bibliography{book.bib,packages.bib}
 
